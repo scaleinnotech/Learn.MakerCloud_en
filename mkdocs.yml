@@ -1,0 +1,9 @@
+site_name: Learn.MakerCloud
+
+nav:
+  - 主頁: index.md
+  - 開始使用: register/register.md
+
+theme: readthedocs
+
+copyright: ©Copyright SCALE Innotech Limited
