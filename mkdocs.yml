@@ -7,3 +7,7 @@ nav:
 theme: readthedocs
 
 copyright: ©Copyright SCALE Innotech Limited
+
+markdown_extensions:
+  - extra
+  - toc
