@@ -1,8 +1,15 @@
 site_name: Learn.MakerCloud
 
 nav:
+  - 創客雲 MakerCloud: https://makercloud.scaleinnotech.com/
   - 主頁: index.md
-  - 開始使用: register/register.md
+  - 開始使用: ch0_registration/register.md
+  - 項目: ch1_project/project.md
+  - MQTT簡介: ch2_MQTT/mqtt.md
+  - 主題: ch3_Topic/topic.md
+  - 發布:
+    - 發布: ch3_Topic/topic.md
+    - micro:bit: ch4_publish/publish.md
 
 theme: readthedocs
 
@@ -10,4 +17,5 @@ copyright: ©Copyright SCALE Innotech Limited
 
 markdown_extensions:
   - extra
-  - toc
+  - toc:
+      toc_depth: 2-5
