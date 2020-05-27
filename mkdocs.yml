@@ -8,8 +8,8 @@ nav:
   - MQTT簡介: ch2_MQTT/mqtt.md
   - 主題: ch3_Topic/topic.md
   - 發布:
-    - 發布: ch3_Topic/topic.md
-    - micro:bit: ch4_publish/publish.md
+    - 創客雲: ch4_publish/makercloud/makercloud.md
+    - BBC micro:bit: ch4_publish/microbit/microbit.md
 
 theme: readthedocs
 
