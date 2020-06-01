@@ -18,4 +18,4 @@ copyright: ©Copyright SCALE Innotech Limited
 markdown_extensions:
   - extra
   - toc:
-      toc_depth: 2-5
+      toc_depth: 2-3
