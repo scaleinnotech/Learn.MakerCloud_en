@@ -1,6 +1,6 @@
-# BBC micro:bit發布
+# 使用BBC micro:bit連接創客雲
 由於BBC
-micro:bit本身並沒有連接網絡的功能，所以必須加上Wi-Fi模組令micro:bit能夠連接網絡。
+micro:bit本身並沒有連接網絡的功能，所以必須加上Wi-Fi模組令micro:bit能夠連接網絡，
 同時只要在該Wi-Fi模組的擴展有支援MQTT的積木便可以發布資料到創客雲。
 現時市面上有不少Wi-Fi模組是支援MQTT的，但連接MQTT的步驟通常比較繁複。
 而為了簡化連接創客雲，創客雲為市面常用的Wi-Fi模組提供micro:bit擴展。KittenBot的KittenWiFi模組是推薦使用的Wi-Fi模組。
@@ -24,31 +24,31 @@ KittenWiFi使用4pin的防反接接口。4個接口分別是G、V、A、B。
 
 |                    紅色                    |                   紫色                    |                    綠色                    |
 |:-----------------------------------------:|:-----------------------------------------:|:-----------------------------------------:|
-| ![img_4.png](img/img_3.png){:width="40%"} | ![img_4.png](img/img_4.png){:width="40%"} | ![img_4.png](img/img_5.png){:width="40%"} |
+| ![img_3.png](img/img_3.png){:width="40%"} | ![img_4.png](img/img_4.png){:width="40%"} | ![img_5.png](img/img_5.png){:width="40%"} |
 |                未連接Wi-Fi                 |              正嘗試連接Wi-Fi               |               已成功連接Wi-Fi               |
 
 簡單認識了KittenWiFi後，我們便可以把KittenWiFi配合不同的擴展板連接到micro:bit上使用。
 
 ### Armour:bit
 由於Armour:bit亦是使用4pin防反接接口，所以使用上會較為方便。  
-把KittenWiFi連接到Armour:bit的Port2。
+把KittenWiFi連接到Armour:bit的Port2。  
 ![img_6.png](img/img_6.png)  
 然後到Makecode上開始編程。
 
 #### Makecode for micro:bit
 [https://makecode.microbit.org/]()
 
-##### 新增專案
+#### 新增專案
 ![img_7.png](img/img_7.png)
 
-##### 加入創客雲KittenWiFi擴展
+#### 加入創客雲KittenWiFi擴展
 1. 點撃「進階」->「擴展」
 2. 複製並貼上「創客雲KittenWiFi」的擴展連結  
    [https://github.com/maxwong-scale/pxt-makercloud-V2]()
 
 ![img_8.gif](img/img_8.gif)
 
-##### 連接Wi-Fi及創客雲
+#### 連接Wi-Fi及創客雲
 **當啟動時**  
 首先要在micro:bit啟動時設定好KittenWiFi。
 
@@ -67,6 +67,8 @@ KittenWiFi使用4pin的防反接接口。4個接口分別是G、V、A、B。
 |:-------------------------------------------:|:-------------------------------------------:|
 | ![img_11.gif](img/img_11.gif){:width="70%"} | ![img_12.gif](img/img_12.gif){:width="70%"} |
 
+當成功連接創客雲後，使用者便可以加入其他編程令micro:bit進行其他MQTT指令。  
+***注意每次編程必須要先連接Wi-Fi和創客雲MQTT。**
 
 
 ### Robot:bit

@@ -7,9 +7,11 @@ nav:
   - 項目: ch1_project/project.md
   - MQTT簡介: ch2_MQTT/mqtt.md
   - 主題: ch3_Topic/topic.md
+  - 連接創客雲:
+      - BBC micro:bit: ch4_connect/microbit/connect_microbit.md
   - 發布:
-    - 創客雲: ch4_publish/makercloud/makercloud.md
-    - BBC micro:bit: ch4_publish/microbit/microbit.md
+    - 創客雲: ch5_publish/makercloud/makercloud.md
+    - BBC micro:bit: ch5_publish/microbit/publish_microbit.md
 
 theme: readthedocs
 
@@ -18,4 +20,4 @@ copyright: ©Copyright SCALE Innotech Limited
 markdown_extensions:
   - extra
   - toc:
-      toc_depth: 2-4
+      toc_depth: 2-3
