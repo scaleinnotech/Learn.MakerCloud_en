@@ -30,20 +30,24 @@
 
 ### 發布文字訊息
 #### 學習重點
-學習如何透過KittenWiFi發布文字訊息到創客雲主題中
+- 學習如何透過KittenWiFi發布文字訊息到創客雲主題中
 
 #### 練習 - 向創客雲打招呼
-目標: 當按下micro:bit的A按鈕，micro:bit便會發布文字訊息「hello」到創客雲。
+##### 目標
+當按下micro:bit的A按鈕，micro:bit便會發布文字訊息「hello」到創客雲。
 
-在Makecode編程前，我們需要在創客雲上:
+![img_9.png](img/img_9.png){:width="70%"}
+
+**在Makecode編程前，我們需要在創客雲上:**
 
 1. 創建項目
 2. 創建主題
 
-然後便可到Makecode編程:
+**然後便可到Makecode編程:**
 
 1. 新增專案
-2. 加入創客雲KittenWiFi擴展
+2. 加入創客雲KittenWiFi擴展  
+   [https://github.com/maxwong-scale/pxt-makercloud-V2]()
 3. 當啟動時:  
    更新KittenWiFi接口、連接WiFi及創客雲MQTT
 4. 當按鈕「A」被按下:  
@@ -62,3 +66,48 @@
 完成後，回到創客雲的項目主頁。  
 當按下micro:bit的A按鈕後，在即時數據紀錄便可以看到來自micro:bit的文字訊息。  
 ![img_8.png](img/img_8.png){:width="70%"}
+
+### 發布鍵值對訊息
+#### 學習重點
+- 學習如何透過KittenWiFi發布文字訊息到創客雲主題中
+- 學習在創客雲上創建直線圖表達鍵值對訊息
+
+#### 練習 - 發布隨機數字
+##### 目標
+- 當按下micro:bit的A按鈕，micro:bit便會發布鍵值對訊息(隨機數字)到創客雲
+- 在創客雲上創建直線圖以顯示鍵值對
+
+![img_10.png](img/img_10.png){:width="80%"}
+
+**在Makecode編程前，我們需要在創客雲上:**
+
+1. 創建項目
+2. 創建主題
+
+**然後便可到Makecode編程:**
+
+1. 新增專案
+2. 加入創客雲KittenWiFi擴展  
+   [https://github.com/maxwong-scale/pxt-makercloud-V2]()
+3. 當啟動時:  
+   更新KittenWiFi接口、連接WiFi及創客雲MQTT
+4. 當按鈕「A」被按下:  
+   發布鍵值對  
+![img_11.png](img/img_11.png)
+</br></br>
+注意: 發布積木中分別有**發布鍵文字對**和**發布鍵值對**，使用者可按數據類型使用
+5. 在創客雲複製主題名稱  
+![img_12.png](img/img_12.png){:width="70%"}
+6. 貼上發佈文字訊息積木的"topic"中
+7. 在"key"中輸入"num"，在0中加入"隨機取數0-10"
+![img_13.png](img/img_13.png)
+</br></br>
+8. 下載編程到micro:bit
+
+完成後，回到創客雲的項目主頁。  
+當按下micro:bit的A按鈕後，在即時數據紀錄便可以看到來自micro:bit的鍵值對訊息。  
+![img_14.png](img/img_14.png){:width="70%"}
+
+然後重新整理項目主題。  
+創雲會為鍵值對自動紀錄鍵的名字和創建圖表。
+![img_15.png](img/img_15.png)
