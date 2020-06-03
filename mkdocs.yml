@@ -8,11 +8,12 @@ nav:
   - 連接創客雲:
       - MQTT簡介: ch2_MQTT/mqtt.md
       - 主題: ch3_Topic/topic.md
-      - BBC micro:bit:
-        - KittenWiFi: ch4_connect/microbit/connect_microbit.md
+      - BBC micro:bit: ch4_connect/microbit/connect_microbit.md
   - 發布:
-    - 創客雲: ch5_publish/makercloud/makercloud.md
-    - BBC micro:bit: ch5_publish/microbit/publish_microbit.md
+      - 創客雲: ch5_publish/makercloud/makercloud.md
+      - BBC micro:bit: ch5_publish/microbit/publish_microbit.md
+  - 訂閱:
+      - BBC micro:bit: ch6_subscribe/microbit/subscribe_microbit.md
 
 theme: readthedocs
 
