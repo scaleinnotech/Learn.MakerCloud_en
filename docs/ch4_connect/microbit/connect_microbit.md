@@ -69,6 +69,3 @@ KittenWiFi使用4pin的防反接接口。4個接口分別是G、V、A、B。
 
 當成功連接創客雲後，使用者便可以加入其他編程令micro:bit進行其他MQTT指令。  
 ***注意每次編程必須要先連接Wi-Fi和創客雲MQTT。**
-
-
-### Robot:bit
