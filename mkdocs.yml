@@ -13,6 +13,7 @@ nav:
       - MQTT簡介: ch2_MQTT/mqtt.md
       - 主題: ch3_Topic/topic.md
       - BBC micro:bit: ch4_connect/microbit/connect_microbit.md
+      - App Inventor 2: ch4_connect/ai2/connect_ai2.md
   - 發布:
       - 創客雲: ch5_publish/makercloud/makercloud.md
       - BBC micro:bit: ch5_publish/microbit/publish_microbit.md
