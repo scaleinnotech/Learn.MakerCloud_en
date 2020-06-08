@@ -1,5 +1,9 @@
 site_name: Learn.MakerCloud
 
+site_url: http://learn.makercloud.io/
+
+site_description: 學習利用創客雲輕鬆實踐IoT和A.I.
+
 nav:
   - 創客雲 MakerCloud: https://makercloud.scaleinnotech.com/
   - 主頁: index.md
