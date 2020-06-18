@@ -10,12 +10,15 @@
 **連接創客雲**  
 [MQTT簡介](ch2_MQTT/mqtt.md)  
 [主題Topic](ch3_Topic/topic.md)  
-[使用BBC micro:bit連接創客雲](ch4_connect/microbit/connect_microbit.md)
+[使用BBC micro:bit連接創客雲](ch4_connect/microbit/connect_microbit.md)  
+[使用App Inventor 2連接創客雲](ch4_connect/ai2/connect_ai2.md)
 
 **發布**  
 [創客雲發布](ch5_publish/makercloud/makercloud.md)  
-[使用BBC micro:bit發布訊息](ch5_publish/microbit/publish_microbit.md)
+[使用BBC micro:bit發布訊息](ch5_publish/microbit/publish_microbit.md)  
+[使用App Inventor 2發布訊息](ch5_publish/ai2/publish_ai2.md)
 
 **訂閱**  
-[使用BBC micro:bit訂閱主題](ch6_subscribe/microbit/subscribe_microbit.md)
+[使用BBC micro:bit訂閱主題](ch6_subscribe/microbit/subscribe_microbit.md)  
+[使用App Inventor 2訂閱主題](ch6_subscribe/ai2/subscribe_ai2.md)
 
