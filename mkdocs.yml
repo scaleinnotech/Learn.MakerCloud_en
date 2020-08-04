@@ -5,7 +5,7 @@ site_url: http://learn.makercloud.io/
 site_description: 學習利用創客雲輕鬆實踐IoT和A.I.
 
 nav:
-  - 創客雲 MakerCloud: https://makercloud.scaleinnotech.com/
+  - 創客雲 MakerCloud: https://makercloud.io/
   - 主頁: index.md
   - 開始使用: ch0_registration/register.md
   - 項目: ch1_project/project.md
@@ -14,13 +14,16 @@ nav:
       - 主題: ch3_Topic/topic.md
       - BBC micro:bit: ch4_connect/microbit/connect_microbit.md
       - App Inventor 2: ch4_connect/ai2/connect_ai2.md
+      - Python: ch4_connect/python/connect_python.md
   - 發布:
       - 創客雲: ch5_publish/makercloud/makercloud.md
       - BBC micro:bit: ch5_publish/microbit/publish_microbit.md
       - App Inventor 2: ch5_publish/ai2/publish_ai2.md
+      - Python: ch5_publish/python/publish_python.md
   - 訂閱:
       - BBC micro:bit: ch6_subscribe/microbit/subscribe_microbit.md
       - App Inventor 2: ch6_subscribe/ai2/subscribe_ai2.md
+      - Python: ch6_subscribe/python/subscribe_python.md
 theme: readthedocs
 
 copyright: ©Copyright SCALE Innotech Limited
