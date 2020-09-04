@@ -109,7 +109,7 @@
 3. 在創客雲複製主題名稱  
    ![img_16.png](img/img_16.png){:width="60%"}
 
-4. 在"key"中輸入"num"，在"value中加入"隨機整數從0到100"
+4. 在"Topic"中貼上主題名稱，在"key"中輸入"num"，在"value中加入"隨機整數從0到10"
    ![img_17.png](img/img_17.png){:width="90%"}
 </br></br>
 
