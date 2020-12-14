@@ -44,7 +44,7 @@ KittenWiFi使用4pin的防反接接口，4個接口分別是G、V、A、B。
 #### 加入創客雲KittenWiFi擴展
 1. 點撃「進階」->「擴展」
 2. 複製並貼上「創客雲KittenWiFi」的擴展連結  
-   [https://github.com/maxwong-scale/pxt-makercloud-V2]()
+   [https://github.com/scaleinnotech/pxt-makercloud-v2]()
 
 ![img_8.gif](img/img_8.gif)
 
