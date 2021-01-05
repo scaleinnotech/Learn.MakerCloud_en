@@ -9,20 +9,21 @@ nav:
   - 主頁: index.md
   - 開始使用: ch0_registration/register.md
   - 項目: ch1_project/project.md
-  - 連接創客雲:
+  - 物聯網IoT:
       - MQTT簡介: ch2_MQTT/mqtt.md
       - 主題: ch3_Topic/topic.md
+  - MQTT－連接創客雲:
       - BBC micro:bit: ch4_connect/microbit/connect_microbit.md
       - App Inventor 2: ch4_connect/ai2/connect_ai2.md
       - Python: ch4_connect/python/connect_python.md
       - M5Stack: ch4_connect/m5stack/connect_m5stack.md
-  - 發布:
+  - MQTT－發布:
       - 創客雲: ch5_publish/makercloud/makercloud.md
       - BBC micro:bit: ch5_publish/microbit/publish_microbit.md
       - App Inventor 2: ch5_publish/ai2/publish_ai2.md
       - Python: ch5_publish/python/publish_python.md
       - M5Stack: ch5_publish/m5stack/publish_m5stack.md
-  - 訂閱:
+  - MQTT－訂閱:
       - BBC micro:bit: ch6_subscribe/microbit/subscribe_microbit.md
       - App Inventor 2: ch6_subscribe/ai2/subscribe_ai2.md
       - Python: ch6_subscribe/python/subscribe_python.md

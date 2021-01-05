@@ -64,18 +64,21 @@
    當screen初始化，執行「呼叫MakerCloudMQTT」
 </br></br>
 2. 加入訂閱創客雲主題積木，然後複製並貼上需訂閱的主題名稱  
-   ![img_9.png](img/img_9.png){:width="60%"}  
+   ![img_topic_message.png](img/img_topic_message.png){:width="70%"}
+   </br></br>
    ![img_10.png](img/img_10.png)
-</br></br>
+   </br></br>
+
 3. 加入「當MakerCloud.stringMessageHandler」積木  
 ![img_11.png](img/img_11.png)
 </br></br>
 4. 設標籤1的文字為「receivedMessage」  
    ![img_12.png](img/img_12.png){:width="65%"}
 
-完成編程後，回到創客雲的項目主頁。  
-點擊主題描述，進入主題主頁。在「發送消息到主題」的文字輸入框中，輸入「hello」，然後按「發送」。  
-![img_13.gif](img/img_13.gif)
+完成編程後，回到創客雲的物聯網主頁。  
+按下主題中的「詳細資料」按鈕，進入主題主頁。  
+在「發送消息到主題」的文字輸入框中，輸入「hello」，然後按「發送」。  
+![img_publishhello.gif](img/img_publishhello.gif)
 
 此時，App上的標籤會同時顥示「hello」。
 

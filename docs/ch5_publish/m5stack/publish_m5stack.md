@@ -40,16 +40,19 @@
    ![img_5.png](img/img_5.png){:width="60%"}
 </br></br>
 5. 在創客雲複製主題名稱  
-   ![img_4.png](img/img_4.png){:width="60%"}
+   ![img_topic_randNum.png](img/img_topic_randNum.png){:width="80%"}
+</br></br>
 6. 在"Topic"中貼上主題名稱，在"key"中輸入"num"，在"value中加入"random integer from 0 to 10"
    ![img_6.png](img/img_6.png){:width="65%"}
 </br></br>
 
 完成後，回到創客雲的項目主頁。  
 當按下按鈕後，在即時數據紀錄便可以看到來自App的鍵值對訊息。  
-![img_7.png](img/img_7.png){:width="80%"}
+![img_7.png](img/img_7.png){:width="70%"}
 
-然後重新整理項目主頁。  
-創雲會為鍵值對自動紀錄鍵的名字和創建圖表。  
+然後重新整理項目主頁，並轉到圖表主頁。  
+![img_tochartpage.png](img/img_tochartpage.png){:width="100%"}
+
+創客雲會為鍵值對自動紀錄鍵的名字和創建圖表。  
 ![img_8.png](img/img_8.png){:width="80%"}
 

@@ -57,17 +57,17 @@
 1. 加入連接創客雲積木  
    當screen初始化，執行「呼叫MakerCloudMQTT」
 2. 當點選"按鈕1"後，發布在文字輸入盒中的文字到創客雲  
-   ![img_9.png](img/img_9.png){:width="70%"}  
-</br></br>
+   ![img_9.png](img/img_9.png){:width="70%"}
 3. 在創客雲複製主題名稱  
-   ![img_10.png](img/img_10.png){:width="60%"}
+   ![img/img_topic_message.png](img/img_topic_message.png){:width="80%"}
+</br></br>
 4. 在AI2，把主題名稱貼上到"topic"
    ![img_11.png](img/img_11.png){:width="70%"}
 
 這樣便完成了發布文字的AI2編程了。
 
 回到創客雲的項目主頁，在即時數據紀錄視窗中便可看到從APP發布的文字訊息。
-![img_12.png](img/img_12.png){:width="80%"}
+![img_12.png](img/img_12.png){:width="70%"}
 
 ## 發布鍵值對訊息
 #### 學習重點
@@ -107,8 +107,8 @@
    注意: 發布積木中分別有**發布鍵文字對**和**發布鍵值對**，使用者可按數據類型使用
     </br></br>
 3. 在創客雲複製主題名稱  
-   ![img_16.png](img/img_16.png){:width="60%"}
-
+   ![img_topic_randNum.png](img/img_topic_randNum.png){:width="80%"}
+    </br></br>
 4. 在"Topic"中貼上主題名稱，在"key"中輸入"num"，在"value中加入"隨機整數從0到10"
    ![img_17.png](img/img_17.png){:width="90%"}
 </br></br>
@@ -117,8 +117,10 @@
 當按下按鈕後，在即時數據紀錄便可以看到來自App的鍵值對訊息。  
 ![img_18.png](img/img_18.png){:width="70%"}
 
-然後重新整理項目主頁。  
-創雲會為鍵值對自動紀錄鍵的名字和創建圖表。  
-![img_19.png](img/img_19.png)
+然後重新整理項目主頁，並轉到圖表主頁。
+![img_tochartpage.png](img/img_tochartpage.png){:width="100%"}
+
+創客雲會為鍵值對自動紀錄鍵的名字和創建圖表。  
+![img_19.png](img/img_19.png){:width="60%"}
 
 

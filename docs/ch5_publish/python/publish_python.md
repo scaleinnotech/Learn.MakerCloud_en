@@ -73,7 +73,7 @@ MakerCloudMQTT.publish_coordination(topic, latitude, longitude)
 1. 創建項目
 2. 創建主題
 3. 在創客雲複製主題名稱  
-![img_2.png](img/img_2.png){:width="60%"}
+![img/img_topic_message.png](img/img_topic_message.png){:width="80%"}
 
 **然後便可到Python編程:**
 ```python
@@ -98,7 +98,7 @@ Message: Python
 ```
 
 回到創客雲的項目主頁，在即時數據紀錄視窗中便可看到從APP發布的文字訊息。
-![img_3.png](img/img_3.png){:width="65%"}
+![img_3.png](img/img_3.png){:width="70%"}
 
 ### 發布鍵值對訊息
 #### 學習重點
@@ -115,7 +115,7 @@ Message: Python
 1. 創建項目
 2. 創建主題
 3. 在創客雲複製主題名稱  
-   ![img_4.png](img/img_4.png){:width="60%"}
+![img_topic_randNum.png](img/img_topic_randNum.png){:width="80%"}
 
 **然後便可到Python編程:**
 ```python
@@ -141,6 +141,8 @@ while 1:
 在即時數據紀錄便可以看到來自App的鍵值對訊息。  
 ![img_6.png](img/img_6.png){:width="70%"}
 
-然後重新整理項目主頁。  
-創雲會為鍵值對自動紀錄鍵的名字和創建圖表。  
-![img_5.png](img/img_5.png){:width="60%"}
+然後重新整理項目主頁，並轉到圖表主頁。  
+![img_tochartpage.png](img/img_tochartpage.png){:width="100%"}
+
+創客雲會為鍵值對自動紀錄鍵的名字和創建圖表。  
+![img_chart.png](img/img_chart.png){:width="60%"}

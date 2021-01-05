@@ -52,7 +52,8 @@
 3. 當啟動時:  
    更新KittenWiFi接口、連接WiFi及創客雲MQTT
 4. 加入訂閱創客雲主題積木，然後複製並貼上需訂閱的主題名稱  
-![img_6.png](img/img_6.png){:width="70%"}  
+![img_topic_message.png](img/img_topic_message.png){:width="70%"}
+</br></br>
 ![img_7.png](img/img_7.png)
 </br></br>
 5. 加入「當MQTT 收到文字訊息」，然後貼上已訂閱的主題名稱  
@@ -64,8 +65,9 @@
 7. 下載編程到micro:bit
 
 完成編程後，回到創客雲的項目主頁。  
-點擊主題描述，進入主題主頁。在「發送消息到主題」的文字輸入框中，輸入「hello」，然後按「發送」。  
-![img_11.gif](img/img_11.gif)
+按下主題中的「詳細資料」按鈕，進入主題主頁。  
+在「發送消息到主題」的文字輸入框中，輸入「hello」，然後按「發送」。  
+![img_publishhello.gif](img/img_publishhello.gif)
 
 從創客雲發送訊息後，micro:bit上的LED便會顯示「hello」。  
 ![img_12.gif](img/img_12.gif){:width="40%"}

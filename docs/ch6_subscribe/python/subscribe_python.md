@@ -101,7 +101,8 @@ MakerCloudMQTT.coordinate_handler = coordinate_handler
 1. 創建項目
 2. 創建主題
 3. 在創客雲複製主題名稱  
-![img_2.png](img/img_2.png){:width="60%"}
+![img_topic_message.png](img/img_topic_message.png){:width="70%"}
+
 
 **然後便可到Python編程:**
 ```python
@@ -122,8 +123,9 @@ MakerCloudMQTT.subscribe(topic)
 ```
 
 完成及運行編程後，回到創客雲的項目主頁。  
-點擊主題描述，進入主題主頁。在「發送消息到主題」的文字輸入框中，輸入「hello」，然後按「發送」。  
-![img_3.gif](img/img_3.gif)
+按下主題中的「詳細資料」按鈕，進入主題主頁。  
+在「發送消息到主題」的文字輸入框中，輸入「hello」，然後按「發送」。  
+![img_publishhello.gif](img/img_publishhello.gif)
 
 回到Python程式，便會收到文字訊息:
 ```

@@ -55,7 +55,7 @@
 ![img_5.png](img/img_5.png)
 </br></br>
 5. 在創客雲複製主題名稱  
-![img_6.png](img/img_6.png){:width="70%"}
+![img/img_topic_message.png](img/img_topic_message.png){:width="80%"}
 </br></br>
 6. 貼上發佈文字訊息積木的"topic"中
 7. 在"message"中輸入"hello"  
@@ -97,7 +97,8 @@
 </br></br>
 注意: 發布積木中分別有**發布鍵文字對**和**發布鍵值對**，使用者可按數據類型使用
 5. 在創客雲複製主題名稱  
-![img_12.png](img/img_12.png){:width="70%"}
+![img_topic_randNum.png](img/img_topic_randNum.png){:width="80%"}
+</br></br>
 6. 貼上發佈文字訊息積木的"topic"中
 7. 在"key"中輸入"num"，在0中加入"隨機取數0-10"
 ![img_13.png](img/img_13.png)
@@ -108,6 +109,8 @@
 當按下micro:bit的A按鈕後，在即時數據紀錄便可以看到來自micro:bit的鍵值對訊息。  
 ![img_14.png](img/img_14.png){:width="70%"}
 
-然後重新整理項目主頁。  
-創雲會為鍵值對自動紀錄鍵的名字和創建圖表。  
-![img_15.png](img/img_15.png)
+然後重新整理項目主頁，並轉到圖表主頁。  
+![img_tochartpage.png](img/img_tochartpage.png){:width="100%"}
+
+創客雲會為鍵值對自動紀錄鍵的名字和創建圖表。  
+![img_15.png](img/img_15.png){:width="60%"}
