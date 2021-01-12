@@ -1,25 +1,25 @@
-# 主題Topic
+# Topic
 [TOC]
-## 創建主題
-1. 在項目主頁，按下「創建主題」按鈕。
-2. 輸入主題描述，按下「確認」按鈕。
-3. 按下「OK」按鈕。
+## Create Topic
+1. On the project homepage, click "Create Topic"
+2. Enter the subject description and click "Confirm".
+3. Click "OK".
 
 ![img_1.gif](img/img_1.gif){:width="75%"}
 
-成功創建主題後，按下物聯網進入物聯網主頁，便可看到創建的主題。  
+After creating the topic, press the "Internet of Things" tab to enter the Internet of Things homepage, and you can see the created topic.
 ![img_2.png](img/img_2.png){:width="100%"}
 
-在建創多於一個的主題後，可在物聯網主頁中按下不同的主題以轉換主題頁面。
+After creating more than one topic, you can click a different topic tab on the Internet of Things homepage to switch the topic page.
 ![img_1.gif](img/img_5.gif){:width="100%"}
 
-## 更改主題描述
-1. 按下「詳細資料」按鈕，進入主題主頁
-2. 按下「更新主題」
-3. 更改主題名稱，按下「確認」按鈕。
-4. 按下「OK」按鈕。
+## Changing the Topic Description
+1. Press the "Details" button to enter the theme homepage
+2. Click "Update Topic"
+3. Change the description and click "OK".
+4. Click "OK".
 
 ![img_3.gif](img/img_3.gif){:width="100%"}
 
-成功更改主題描述後，回到物聯網主頁中便可看到主題描述已經更改。
+After changing the theme subscription, go back to the homepage of the Internet of Things, and you will see that the theme description has been changed.
 ![img_4.png](img/img_4.png){:width="100%"}

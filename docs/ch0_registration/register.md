@@ -1,12 +1,12 @@
-# Start Using
+# Registration
 [TOC]
 
 ## Register with MakerCloud with Authorization Code
- Register with MakerCloud using Authorization Code  
+ Registering with MakerCloud using an Authorization Code  
 [https://makercloud.scaleinnotech.com/]()  
 ![image.png](img/img_1.png){:width="60%"}
 
-Select “register account with authorization code”  
+Select “Register Account with Authorization Code”  
 ![img_2.png](img/img_2.png){:width="60%"}
 
 Enter “Email Address” and “Authorization Code”，then click “Create Guest Account”  
@@ -17,7 +17,7 @@ After successfully creating an account, you can view the details of the authoriz
 ![img_4.png](img/img_4.png){:width="40%"}
 
 ## Register with MakerCloud with the Activity Code
-Go to the MakerCloud homepage and press the "register account" button
+Go to the MakerCloud homepage and click "Register Account"
 [https://makercloud.scaleinnotech.com/]()  
 ![img_5.png](img/img_5.png){:width="60%"}
 
@@ -47,5 +47,5 @@ If you register with a Google account, just log in with Google on the homepage, 
 
 ![img_9.png](img/img_9.png){:width="60%"}
 
-For non-Google users, you can enter your user name, email address and password to log in  
+For non-Google users, you can enter your username, email address and password to log in  
 ![img_10.png](img/img_10.png){:width="60%"}

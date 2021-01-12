@@ -1,38 +1,39 @@
-# 項目
+# Projects
 [TOC]
-## 創建項目
-1. 登入創客雲後，按下「創建項目」按鈕。
-2. 輸入項目名稱，按下「確認」按鈕。
-3. 按下「OK」按鈕。
+## Creating a Project
+1. After logging into MakerCloud, click "Create Project".
+2. Enter the project name and click "OK".
+3. Click "OK".
 
 ![img_1.gif](img/img_1.gif)
 
-成功建立項目後，便會進入項目主頁。  
+After successfully creating the project, you will enter the project homepage.  
 ![img_2.png](img/img_2.png)
 
-## 更改項目名稱
-1. 進入項目主頁，按下「更改名稱」按鈕。
-2. 更改項目名稱，按下「確認」按鈕。
-3. 按下「OK」按鈕。
+## Changing the Project Name
+1. Go to the project homepage and click the "Change Name" button.
+2. Change the project name and click "OK".
+3. Click "OK".
 
 ![img_3.gif](img/img_3.gif)
 
-## 項目分享
-使用者可以透過分享連結或QR code給其他使用者，因此不同的使用者可以共同協作同一個項目。
+## Sharing your Project
+Users can share links or QR codes with other users so different users can collaborate on the same project.
 
-1. 在用戶列表中，按下「分享」按鈕。  
+1. Press the Share button.
+
 ![img_4.png](img/img_4.png){:width="70%"}
 </br></br>
-2. 把連結或QR code傳送給其他創客雲使用者。  
+2. Send the link or QR code to other MakerCloud users.  
 ![img_5.png](img/img_5.png){:width="50%"}
 
-當其他創客雲使用者加入了項目後，便可以在用戶列表中看到其他使用者的電郵地址。  
+When other MakerCloud users join the project, they can see their email addresses in the user list.
 ![img_6.png](img/img_6.png){:width="70%"}  
-成功加入項目的使用者，可以與其他擁有同一項目的使用者共同協作。
+Joining the same project allows for collaboration between users.
 
-## 上載檔案
+## Uploading Files
 
-使用者可能上載與項目有關的檔案到創害雲，如micro:bit編程、筆記等，方便與項目共同者分享檔案。
+Users may upload files related to the project to MakerCloud, such as micro:bit programming files, notes, etc., to make them available to all the project's collaborators.
 
-在檔案列表中，按下「上載文件」按鈕或直接把文件拖到檔案列表中，便可以上載檔案。  
+In the file list, click "Upload File" or drag the selected file into the file list to upload the file.
 ![img_7.png](img/img_7.png){:width="70%"}

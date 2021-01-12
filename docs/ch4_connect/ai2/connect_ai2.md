@@ -1,36 +1,36 @@
-# 使用App Inventor 2連接創客雲
+# Using App Inventor 2 to connect to MakerCloud
 
 [TOC]
 
-## 創客雲 AI2 extension
-由於App Inventor 2本身並沒有MQTT功能，所以必先下載extension才能連接MQTT。  
-為了方便使用者使用AI2連接創客雲，我們為AI2編寫了創客雲專用的extension:
+## MakerCloud AI2 extension
+Since App Inventor 2 does not have the MQTT function, it is necessary to download the extension before connecting to MQTT.
+In order to facilitate using AI2, we have made a special extension for MakerCloud connecting to AI2:
 
-[創客雲 AI2 extension](extension/scale.MakerCloud.aix) (按右鍵另存新檔）
+[創客雲 AI2 extension](extension/scale.MakerCloud.aix) (right click to save as new file）
 
-## 連接創客雲
+## Connecting to MakerCloud
 
-#### 加入創客雲 AI2 extension
-在extension欄目中，按下「import extension」  
+#### Join AI2 extension
+In the extension column, click "import extension".
 ![img_1.png](img/img_1.png){:width="40%"}
 
-按下「choose file」  
+Click "choose file".
 ![img_2.png](img/img_2.png){:width="60%"}
 
-選擇下載了的「scale.MakerCloud.aix」，然後按下「import」
+Select the downloaded "scale.MakerCloud.aix", then click "import".
 ![img_3.png](img/img_3.png){:width="60%"}
 
-#### 加入MakerCloud元件
-把MakerCloud元件拖曳到Screen中  
+#### Join MakerCloud Components
+Drag the MakerCloud component to the screen.
 ![img_4.png](img/img_4.png){:width="100%"}
 
-#### 修改USERNAME
-創雲會紀錄使用者的名稱，所以需要在元件屬性中修改一個屬於你的USERNAME  
+#### Modifing your Username
+MakerCloud will record the user's name, so you need to make a username that belongs to you in the component properties.
 ![img_5.png](img/img_5.png){:width="40%"}
 
-#### 加入連接創客雲積木
-加入創客雲 AI2 extension後，轉到程式設計頁面
-當screen初始化，執行「呼叫MakerCloudMQTT」  
+#### Join the Connected MakerCloud Building Block
+After joining MakerCloud AI2 extension, go to the programming page.
+When the screen is initialized, execute "Call MakerCloud MQTT".
 ![img_6.png](img/img_6.png){:width="100%"}
 
-這樣便成功連接創客雲MQTT
+This will successfully connect it to MakerCloud through MQTT
