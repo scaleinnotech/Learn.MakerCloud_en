@@ -1,4 +1,4 @@
-# Using App Inventor 2 to connect to MakerCloud
+# Using App Inventor 2 to Connect to MakerCloud
 
 [TOC]
 

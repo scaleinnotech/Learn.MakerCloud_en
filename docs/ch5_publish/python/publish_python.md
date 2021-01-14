@@ -1,148 +1,146 @@
-# 使用Python發布訊息
-在編程發布訊息到創客雲前，使用者必先學習如何令Python連接創客雲MQTT，連接方法可參考上面的教學。  
-[使用Python連接創客雲](../../ch4_connect/python/connect_python.md)
+# Using Python to publish messages to MakerCloud
+Before publishing messages to Maker Cloud, users must first learn how to connect Python to Maker Cloud via MQTT. For instructions, refer to the following link:
+[Using Python to connect to MakerCloud](../../ch4_connect/python/connect_python.md)
 
 [TOC]
 
-## 發布訊息
+## Publishing a message
 
 #### MakerCloudMQTT.publish_message()
-向創客雲發布一個文字訊息到主題
+To publish a text message to a topic on Maker Cloud:
 ```python
 MakerCloudMQTT.publish_message(topic, message)
 ```
-**topic**  
-在「創客雲」上創建的主題名稱
+**Topic -**
+the topic name created on "Maker Cloud"
 
-**message**  
-需要發佈的文字訊息
+**Message -**
+the text message that you want to publish
 
 #### MakerCloudMQTT.publish_key_message()
-向創客雲發布一個鍵文字對訊息到主題
+To publish a key text message to the topic on Maker Cloud:
 ```python
 MakerCloudMQTT.publish_key_message(topic, key, message)
 ```
-**topic**  
-在「創客雲」上創建的主題名稱
+**Topic -**  
+the topic name created on "Maker Cloud"
 
-**key**  
-需要發佈的鍵
+**Key -**
+the key that you want to use
 
-**message**  
-需要發佈的文字訊息
+**Message -**
+The text message that you want to publish
 
 #### MakerCloudMQTT.publish_key_value()
-向創客雲發布一個鍵值對訊息到主題，創客雲上會自動建立對應的直線圖表
+To publish a key-value message to Maker Cloud to the topic (the corresponding line chart will be automatically created on MakerCloud):
 ```python
 MakerCloudMQTT.publish_key_value(topic, key, value)
 ```
-**topic**  
-在「創客雲」上創建的主題名稱
+**Topic -**
+the topic name created on "Maker Cloud"
 
-**key**  
-需要發佈的鍵
+**Key -**
+the key that you want to use
 
-**value**  
-需要發佈的數值
+**Value -**
+the value that you want to publish
 
 #### MakerCloudMQTT.publish_coordination()
-向創客雲發布一個鍵值對訊息到主題，創客雲上會自動建立對應的直線圖表
+To Publish a latidude/longitude message to Maker Cloud to a topic (a corresponding line chart will be automatically created on MakerCloud):
 ```python
 MakerCloudMQTT.publish_coordination(topic, latitude, longitude)
 ```
-**topic**  
-在「創客雲」上創建的主題名稱
+**Topic -**
+the topic name created on "Maker Cloud"
 
-**latitude**  
-需要發佈的緯度
+**Latitude -**
+the latitude you want to publish
 
-**longitude**  
-需要發佈的經度
+**Longitude -**
+the longitude you want to publish
 
-使用者可以根據數據類型使用相對應的發布函數。
+Users can use the publishing function that corresponds to the type of data they want to send.
 
-## 發布文字訊息
-#### 學習重點
-- 學習如何利用Python發布文字訊息到創客雲主題中
+## Publishing a text message
+#### Learning Focus
+- Learn how to use Python to publish text messages to topics on MakerClou
 
-#### 練習
-讀取輸入文字，然後發布到創客雲主題中。
+#### Exercise:
+- Receive text input and publish it to a topic on MakerCloud.
 
-**在Python編程前，我們需要在創客雲上:**
+**Before programming on python, we need to be prepared on MakerCloud:**
 
-1. 創建項目
-2. 創建主題
-3. 在創客雲複製主題名稱  
-![img/img_topic_message.png](img/img_topic_message.png){:width="80%"}
-
-**然後便可到Python編程:**
+1. Create a project
+2. Create a topic
+3. Copy the topic name in Maker Cloud
+   ![img/img_topic_message.png](img/img_topic_message.png){:width="80%"}
+   
+**Then you can program in Python:**
 ```python
 import MakerCloudMQTT
 
-MakerCloudMQTT.username = 'Max'
-# 貼上主題名稱
-topic = 'QQP4LRB0'
+MakerCloudMQTT.username ='Max'
+# Paste the topic name
+topic ='QQP4LRB0'
 
 while 1:
-    # 讀取輸入交字
-    message = input('Message: ')
-    # 發佈文字訊息到創客雲主題
-    MakerCloudMQTT.publish_message(topic, message)
+     # Read input crossword
+     message = input('Message:')
+     # Post text message to Maker Cloud theme
+     MakerCloudMQTT.publish_message(topic, message)
 ```
 
-運行編程後，輸入需要發佈的文字訊息
+After running the programming, enter the text message you want to publish
 ```
 Message: hello
 Message: from
 Message: Python
 ```
 
-回到創客雲的項目主頁，在即時數據紀錄視窗中便可看到從APP發布的文字訊息。
+On the project homepage of Maker Cloud, you can see the text messages published from python in the real-time data viewer.
 ![img_3.png](img/img_3.png){:width="70%"}
+### Publishing a key-value pair message
+#### Learning Focus:
+- Learn how to publish key-value pairs to Maker Cloud topics through Python
+- Learn to create a line graph on Maker Cloud to display and record key-value pair messages
 
-### 發布鍵值對訊息
-#### 學習重點
-- 學習如何透過Python發布鍵值對到創客雲主題中
-- 學習在創客雲上創建直線圖表達鍵值對訊息
+#### Exercise: Publishing random numbers
+##### Goals:
+- Publish key-value pair messages (random numbers) to Maker Cloud
+- Create a line graph on Maker Cloud to display and record key-value pairs
 
-#### 練習 - 發布隨機數字
-##### 目標
-- 發布鍵值對訊息(隨機數字)到創客雲
-- 在創客雲上創建直線圖以顯示鍵值對
+**Before programming on python, we need to be prepared on MakerCloud:**
 
-**在AI2編程前，我們需要在創客雲上:**
+1. Create a project
+2. Create a topic
+3. Copy the topic name in Maker Cloud
+   ![img_topic_randNum.png](img/img_topic_randNum.png){:width="80%"}
 
-1. 創建項目
-2. 創建主題
-3. 在創客雲複製主題名稱  
-![img_topic_randNum.png](img/img_topic_randNum.png){:width="80%"}
-
-**然後便可到Python編程:**
+**Then you can program in python:**
 ```python
 import MakerCloudMQTT
 import random
 import time
-
 MakerCloudMQTT.username = 'Max'
-# 貼上主題名稱
-topic = 'QQP4LRB0'
+# Place the topic name inside a variable
+topic ='QQP4LRB0'
 
 while 1:
-    # 產生隨機數字(1-10)
-    randomInt = random.randint(1, 10)
-    # 發佈鍵值對(隨機數字)到創客雲主題
-    MakerCloudMQTT.publish_key_value(topic, 'num', randomInt)
-    print('Published: num =',randomInt)
-    # 暫停1秒
-    time.sleep(1)
+     # Generate random numbers (1-10)
+     randomInt = random.randint(1, 10)
+     # Publish key-value pairs (random numbers) to the maker cloud theme
+     MakerCloudMQTT.publish_key_value(topic,'num', randomInt)
+     print('Published: num =',randomInt)
+     # Pause for 1 second
+     time.sleep(1)
 
 ```
-完成後，回到創客雲的項目主頁。  
-在即時數據紀錄便可以看到來自App的鍵值對訊息。  
+When finished, return to the project homepage of Maker Cloud.
+You can see the key-value pair messages from python in the real-time data viewer.
 ![img_6.png](img/img_6.png){:width="70%"}
 
-然後重新整理項目主頁，並轉到圖表主頁。  
+Then refresh the project home page and go to the chart home page.
 ![img_tochartpage.png](img/img_tochartpage.png){:width="100%"}
 
-創客雲會為鍵值對自動紀錄鍵的名字和創建圖表。  
+Maker Cloud will automatically record the name of the key and create a chart for the key-value messages.
 ![img_chart.png](img/img_chart.png){:width="60%"}

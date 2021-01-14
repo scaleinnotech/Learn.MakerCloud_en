@@ -1,31 +1,29 @@
-# 創客雲MakerCloud
+# MakerCloud MakerCloud
 ![logo.png](logo.png){:width="40%"}
 #[https://makercloud.io/](https://makercloud.io/)
-創客雲是智方創科有限公司自主研發的物聯網整合平台，透過簡單易用的介面，讓同學輕鬆製作智慧應用，從而學習相關的科技和並掌握系統設計的概念。
+Maker Cloud is an IoT integration platform independently developed by Zhifang Innovation Technology Co., Ltd. Through a simple and easy-to-use interface, students can easily create smart applications, learn related technologies and understand the concepts of system design.
 
-#### 目錄
-[開始使用](ch0_registration/register.md)  
-[項目](ch1_project/project.md)
+#### table of Contents
+[Getting started](ch0_registration/register.md)
+[Project](ch1_project/project.md)
 
-**連接創客雲**  
-[MQTT簡介](ch2_MQTT/mqtt.md)  
-[主題Topic](ch3_Topic/topic.md)  
-[使用BBC micro:bit連接創客雲](ch4_connect/microbit/connect_microbit.md)  
-[使用App Inventor 2連接創客雲](ch4_connect/ai2/connect_ai2.md)  
-[使用Python連接創客雲](ch4_connect/python/connect_python.md)  
-[使用M5Stack連接創客雲](ch4_connect/m5stack/connect_m5stack.md)
+**Connect to Maker Cloud**
+[Introduction to MQTT](ch2_MQTT/mqtt.md)
+[Topic](ch3_Topic/topic.md)
+[Using BBC micro:bit to connect to Maker Cloud](ch4_connect/microbit/connect_microbit.md)
+[Using App Inventor 2 to connect to Maker Cloud](ch4_connect/ai2/connect_ai2.md)
+[Using Python to connect to Maker Cloud](ch4_connect/python/connect_python.md)
+[Using M5Stack to connect to Maker Cloud](ch4_connect/m5stack/connect_m5stack.md)
 
-**發布**  
-[創客雲發布](ch5_publish/makercloud/makercloud.md)  
-[使用BBC micro:bit發布訊息](ch5_publish/microbit/publish_microbit.md)  
-[使用App Inventor 2發布訊息](ch5_publish/ai2/publish_ai2.md)  
-[使用Python發布訊息](ch5_publish/python/publish_python.md)  
-[使用M5Stack發布訊息](ch5_publish/m5stack/publish_m5stack.md)
+**Release**
+[Publishing from MakerClou](ch5_publish/makercloud/makercloud.md)
+[Using BBC micro:bit to publish messages](ch5_publish/microbit/publish_microbit.md)
+[Using App Inventor 2 to publish messages](ch5_publish/ai2/publish_ai2.md)
+[Publishing messages using Python](ch5_publish/python/publish_python.md)
+[Using M5Stack to publish messages](ch5_publish/m5stack/publish_m5stack.md)
 
-**訂閱**  
-[使用BBC micro:bit訂閱主題](ch6_subscribe/microbit/subscribe_microbit.md)  
-[使用App Inventor 2訂閱主題](ch6_subscribe/ai2/subscribe_ai2.md)  
-[使用Python訂閱主題](ch6_subscribe/python/subscribe_python.md)  
-[使用M5Stack訂閱主題](ch6_subscribe/ai2/subscribe_ai2.md)
-
-
+**Subscription**
+[Subscribing to topics using BBC micro:bit](ch6_subscribe/microbit/subscribe_microbit.md)
+[Subscribing to topics using App Inventor 2](ch6_subscribe/ai2/subscribe_ai2.md)
+[Subscribing to topics using Python](ch6_subscribe/python/subscribe_python.md)
+[Subscribing to topics using M5Stack](ch6_subscribe/ai2/subscribe_ai2.md)

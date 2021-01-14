@@ -1,58 +1,58 @@
-# 使用M5Stack發布訊息
-在編程發布訊息到創客雲前，使用者必先學習如何令M5Stack連接創客雲MQTT，連接方法可參考上面的教學。  
-[使用M5Stack連接創客雲](../../ch4_connect/m5stack/connect_m5stack.md)
+# Using M5Stack to publish messages to MakerCloud
+Before publishing messages to Maker Cloud, users must first learn how to connect M5Stack to MakerCloud via MQTT. For instructions on connecting, please refer to the following link.
+[Using M5Stack to connect to Maker Cloud](../../ch4_connect/m5stack/connect_m5stack.md)
 
 [TOC]
 
-## 發布訊息積木
+## Publish message programing block
 
-使用者可以使用MakerCloud Custom的發佈積木發佈訊息到創客雲。
+Users can use the programming blocks of MakerCloud from Custom to publish messages to Maker Cloud.
 
-**發布鍵值對訊息**  
-![img_2.png](img/img_2.png){:width="30%"}  
-向創客雲發布一個鍵值對訊息到主題。  
-如果值是數字，創客雲上會自動建立對應的直線圖表。
+**Publishing a  key-value pair message**
+![img_2.png](img/img_2.png){:width="30%"}
 
-## 發布鍵值對訊息
-#### 學習重點
-- 學習如何利用M5Stack發布鍵值對到創客雲主題中
-- 學習在創客雲上創建直線圖表達鍵值對訊息
+- Publishes a key-value pair or key message to the topic on Maker Cloud.
+- If the data sent is a number, a corresponding line chart will be automatically created on MakerCloud.
 
-#### 練習 - 發布隨機數字
-- 當按下按鈕便會發布鍵值對訊息(隨機數字)到創客雲
-- 在創客雲上創建直線圖以顯示鍵值對
+## Publishing a key-value pair message
+#### Learning Focus
+-Learn how to use M5Stack to publish key-value pairs to a topic on MakerCloud
+-Learn to create a line graph on Maker Cloud that displays and records key-value messages
 
-**在UiFlow編程前，我們需要在創客雲上:**
+#### Exercise: Post random numbers
+- Make a button that publishes a random key-value message when clicked.
+- Create a line graph on Maker Cloud to display and record key-value messages
 
-1. 創建項目
-2. 創建主題
+**Before programming on UiFlow, we need to prepare on MakerCloud:**
 
-**然後便可到UiFlow編程:**
+1. Create a project
+2. Create a topic
 
-1. M5Stack連接Wi-Fi，然後把M5Stack連接到UiFlow
-2. 加入創客雲 UiFlow Custom  
-   [下載創客雲 UiFlow Custom](https://cutt.ly/makercloud)
+**Then you can program on UiFlow:**
 
-3. 雙擊UiFlow中的M5Stack的B Button以加入「Button B was pressed」積木
-![img_3.png](img/img_3.png){:width="100%"}
-</br></br>
-4. 在「Button B was pressed」積木中，加入MakerCloud Custom中的發布鍵值對訊息積木。
+1. Connect M5Stack to Wi-Fi, then connect M5Stack to UiFlow
+2. Add Maker Cloud UiFlow Custom
+   [Download Maker Cloud UiFlow Custom](https://cutt.ly/makercloud)
+
+3. Double-click the B Button of M5Stack in UiFlow to add the "Button B wasPressed" block
+   ![img_3.png](img/img_3.png){:width="100%"}
+   </br></br>
+4. In the "Button B wasPressed" building block, add the key-value pair message block from MakerCloud Custom.
    ![img_5.png](img/img_5.png){:width="60%"}
-</br></br>
-5. 在創客雲複製主題名稱  
+   </br></br>
+5. Copy the topic name in Maker Cloud
    ![img_topic_randNum.png](img/img_topic_randNum.png){:width="80%"}
-</br></br>
-6. 在"Topic"中貼上主題名稱，在"key"中輸入"num"，在"value中加入"random integer from 0 to 10"
+   </br></br>
+6. Paste the topic name in "Topic", enter "num" in "key", and add a "random integer from 0 to 10" block in "value"
    ![img_6.png](img/img_6.png){:width="65%"}
-</br></br>
+   </br></br>
+   
+When finished, return to the project homepage of Maker Cloud.
+   When you press the button, you can see the key-value pair message from your app in the real-time data viewer.
+   ![img_7.png](img/img_7.png){:width="70%"}
 
-完成後，回到創客雲的項目主頁。  
-當按下按鈕後，在即時數據紀錄便可以看到來自App的鍵值對訊息。  
-![img_7.png](img/img_7.png){:width="70%"}
-
-然後重新整理項目主頁，並轉到圖表主頁。  
+Then refresh the project home page and go to the chart home page.
 ![img_tochartpage.png](img/img_tochartpage.png){:width="100%"}
 
-創客雲會為鍵值對自動紀錄鍵的名字和創建圖表。  
+Maker Cloud will automatically record the name of the key and create a chart to display and record the key-value pair.
 ![img_8.png](img/img_8.png){:width="80%"}
-

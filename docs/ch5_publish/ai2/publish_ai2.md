@@ -1,126 +1,121 @@
-# 使用App Inventor 2發布訊息
-在編程發布訊息到創客雲前，使用者必先學習如何令App Inventor 2連接創客雲MQTT，連接方法可參考上面的教學。  
-[使用App Inventor 2連接創客雲](../../ch4_connect/ai2/connect_ai2.md)
+# Using App Inventor 2 pubish messages
+Before programming messages to Maker Cloud, users must first learn how to connect App Inventor 2 to Maker Cloud MQTT. For the connection method, please refer to the above instruction.
+[Using App Inventor 2 to Connect to MakerCloud](../../ch4_connect/ai2/connect_ai2.md)
 
 [TOC]
 
-## 發布訊息積木
-在創客雲 AI2 extension 中，有不同類型的發布積木。
+## Publish Message Program Blocks
+In the AI2 extension of Maker Cloud, there are different types of publish program blocks.
 
-**發布文字訊息**  
-![img_1.png](img/img_1.png){:width="40%"}  
-向創客雲發布一個文字訊息到主題
+**Publish a text message**
+![img_1.png](img/img_1.png){:width="40%"}
+Post a text message to a topic on Maker Cloud
 
-**發布鍵文字對訊息**  
-![img_2.png](img/img_2.png){:width="55%"}  
-向創客雲發布一個鍵文字對訊息到主題
+**Publish a text message with a key**
+![img_2.png](img/img_2.png){:width="55%"}
+Publish a text message with a key to a topic on Maker Cloud
 
-**發布鍵值對訊息**  
-![img_3.png](img/img_3.png){:width="50%"}  
-向創客雲發布一個鍵值對訊息到主題，創客雲上會自動建立對應的直線圖表
+**Post key-value pair message**
+![img_3.png](img/img_3.png){:width="50%"}
+Publish a key-value pair message on Maker Cloud to a topic, and a corresponding line chart will be automatically created on Maker Cloud
 
-**發布經緯度訊息**  
-![img_4.png](img/img_4.png){:width="55%"}  
-透過KittenWiFi向創客雲發布一個經緯度訊息到主題
+**Post latitude and longitude information**
+![img_4.png](img/img_4.png){:width="55%"}
+Publish a latitude and longitude message to a topic via KittenWiFi on Maker Cloud
 
-使用者可以根據數據類型使用相對應的發布積木。
+Users can use the corresponding publishing program blocks according to the type of data they want to publish.
 
-## 發布文字訊息
-#### 學習重點
-- 學習如何利用App Inventor 2發布文字訊息到創客雲主題中
+## Posting a text message
+#### Learning Focus
+- Learn how to use App Inventor 2 to publish text messages to a topic on MakerCloud
 
-#### 練習
-當點選按鈕後，便會發布在文字輸入盒中的文字到創客雲。
+#### Exercise
+Make a button that publishes the text in the input box on Maker Cloud when clicked.
 
 ![img_5.png](img/img_5.png){:width="90%"}
 
-**在AI2編程前，我們需要在創客雲上:**
+**Before programming on AI2, we need to be prepared on Maker Cloud:**
 
-1. 創建項目
-2. 創建主題
+1. Create a project
+2. Create a theme
 
-**然後便可到AI2編程:**
+**Then you can program on AI2:**
 
-1. 新增專案
-</br></br>
-2. 加入創客雲 AI2 extension  
-   [創客雲 AI2 extension](../../ch4_connect/ai2/extension/scale.MakerCloud.aix) (按右鍵另存新檔）
-</br></br>
-3. 加入"輸入文字盒", "按鈕" 和 "MakerCloud" 到 "Screen1"中  
+1. Add project
+   </br></br>
+2. Join Maker Cloud AI2 extension
+   [MakerCloud AI2 extension](../../ch4_connect/ai2/extension/scale.MakerCloud.aix) (right click to save a new file)
+   </br></br>
+3. Add a "text input box", "button" and name the screen "MakerCloud"
    ![img_6.png](img/img_6.png){:width="50%"}
-</br></br>
-4. 在MakerCloud的元件屬性中，修改USERNAME  
+   </br></br>
+4. In the component properties of MakerCloud, set the USERNAME to "maxwong"
    ![img_7.png](img/img_7.png){:width="35%"}
 
-**程式設計**
-
-1. 加入連接創客雲積木  
-   當screen初始化，執行「呼叫MakerCloudMQTT」
-2. 當點選"按鈕1"後，發布在文字輸入盒中的文字到創客雲  
+**Designing the program**
+1. Place the Connect Maker Cloud program Block so that it executes when the screen is initialized.
+2. When "Button 1" is clicked, publish the text in the input box to Maker Cloud
    ![img_9.png](img/img_9.png){:width="70%"}
-3. 在創客雲複製主題名稱  
+3. Copy the topic name in Maker Cloud
    ![img/img_topic_message.png](img/img_topic_message.png){:width="80%"}
-</br></br>
-4. 在AI2，把主題名稱貼上到"topic"
+   </br></br>
+4. In AI2, paste the topic name in "topic"
    ![img_11.png](img/img_11.png){:width="70%"}
 
-這樣便完成了發布文字的AI2編程了。
+This completes the AI2 programming of publishing text.
 
-回到創客雲的項目主頁，在即時數據紀錄視窗中便可看到從APP發布的文字訊息。
+On the project homepage of Maker Cloud, you can see the text messages published from your app in the real-time data viewer.
 ![img_12.png](img/img_12.png){:width="70%"}
 
-## 發布鍵值對訊息
-#### 學習重點
-- 學習如何利用App Inventor 2發布鍵值對到創客雲主題中
-- 學習在創客雲上創建直線圖表達鍵值對訊息
+## Publishing a key-value pair message
+#### Learning Focus
+-Learn how to use App Inventor 2 to publish key-value pairs to a Maker Cloud topic
+-Learn to create a line graph on Maker Cloud to express key-value pair messages
 
-#### 練習 - 發布隨機數字
-- 當按下按鈕便會發布鍵值對訊息(隨機數字)到創客雲
-- 在創客雲上創建直線圖以顯示鍵值對
+#### Exercise: Post random numbers
+Make a button that publishes a random key-value pair to MakerCloud when clicked
+- Create a line graph on Maker Cloud to display key-value pairs
 
 ![img_13.png](img/img_13.png){:width="90%"}
 
-**在AI2編程前，我們需要在創客雲上:**
+**Before programming on AI2, we need to be prepared on MakerCloud**
 
-1. 創建項目
-2. 創建主題
+1. Create a project
+2. Create a theme
 
-**然後便可到AI2編程:**
+**Then you can program on AI2:**
 
-1. 新增專案
-</br></br>
-2. 加入創客雲 AI2 extension  
-   [創客雲 AI2 extension](../../ch4_connect/ai2/extension/scale.MakerCloud.aix) (按右鍵另存新檔）
-</br></br>
-3. 加入"按鈕" 和 "MakerCloud" 到 "Screen1"中  
-![img_14.png](img/img_14.png){:width="40%"}
-</br></br>
-4. 在MakerCloud的元件屬性中，修改USERNAME  
+1. Add a project
+   </br></br>
+2. Add the Maker Cloud AI2 extension
+   [MakerCloud AI2 extension](../../ch4_connect/ai2/extension/scale.MakerCloud.aix) (right click to save a new file)
+   </br></br>
+3. Add a "Button" and name the screen "MakerCloud"
+   ![img_14.png](img/img_14.png){:width="40%"}
+   </br></br>
+4. In the properties section of MakerCloud, set the USERNAME to "maxwong"
    ![img_7.png](img/img_7.png){:width="35%"}
+   
+**Designing the Program**
 
-**程式設計**
-
-1. 加入連接創客雲積木  
-   當screen初始化，執行「呼叫MakerCloudMQTT」
-2. 在「當點選 按鈕1」，加入「publishKeyValueToTopic」積木  
+1. Add the Connecting to Maker Cloud block so that it executes when the screen is initialized
+2. Add the "publishKeyValueToTopic" block to "When button1 is clicked"
    ![img_15.png](img/img_15.png)
-   注意: 發布積木中分別有**發布鍵文字對**和**發布鍵值對**，使用者可按數據類型使用
-    </br></br>
-3. 在創客雲複製主題名稱  
+   Note: There are **publish key text pair** and **publish key-value pair** blocks, and users can use them according to the data type they would like to publish
+   </br></br>
+3. Copy the topic name in Maker Cloud
    ![img_topic_randNum.png](img/img_topic_randNum.png){:width="80%"}
-    </br></br>
-4. 在"Topic"中貼上主題名稱，在"key"中輸入"num"，在"value中加入"隨機整數從0到10"
+   </br></br>
+4. Paste the topic name in "Topic", enter "num" in "key", and add a "random integer from 0 to 10" block in "value"
    ![img_17.png](img/img_17.png){:width="90%"}
-</br></br>
+   </br></br>
 
-完成後，回到創客雲的項目主頁。  
-當按下按鈕後，在即時數據紀錄便可以看到來自App的鍵值對訊息。  
+When Finished, return to the project homepage of MakerCloud.
+When you click the button, you can see the key-value pair message from your app in the real-time data viewer.
 ![img_18.png](img/img_18.png){:width="70%"}
 
-然後重新整理項目主頁，並轉到圖表主頁。
+Then refresh the project home page and go to the chart home page.
 ![img_tochartpage.png](img/img_tochartpage.png){:width="100%"}
 
-創客雲會為鍵值對自動紀錄鍵的名字和創建圖表。  
+Maker Cloud will automatically record the name of the key and create a chart for that key, recording it as a data type.
 ![img_19.png](img/img_19.png){:width="60%"}
-
-

@@ -1,53 +1,53 @@
-# 使用M5Stack訂閱主題
-在編程訂閱主題訊息到創客雲前，使用者必先學習如何令M5Stack連接創客雲MQTT，連接方法可根據硬件參考上面的教學。  
-[使用M5Stack連接創客雲](../../ch4_connect/m5stack/connect_m5stack.md)
+# Using M5Stack to subscribe to topics on MakerCloud
+Before programming and subscribing to topics on Maker Cloud, users must connect M5Stack to Maker Cloud via MQTT.  For instructions, refer to the following link.
+[Using M5Stack to connect to Maker Cloud](../../ch4_connect/m5stack/connect_m5stack.md)
 
 [TOC]
 
-## 訂閱積木
-利用UiFlow中的MQTT訂閱積木，配合MakerCloud Custom的資料處理積木便可以完整地接收及處理創客雲上的MQTT訊息。
+## Subscription blocks
+By using the MQTT subscription building block in UiFlow and cooperating with the data processing building block of MakerCloud Custom, you can completely receive and process MQTT messages on Maker Cloud.
 
-**UiFlow訂閱積木**  
-![img_1.png](img/img_1.png){:width="50%"}  
-在連接創客雲後，訂閱創客雲主題。當收到MQTT訊息，便會運行此積木。
+**Subscription Blocks**
+![img_1.png](img/img_1.png){:width="50%"}
+After connecting to Maker Cloud, this block subscribes to a topic on MakerCloud. When an MQTT message is received, this block will run.
 
-**UiFlow取得數據**  
-![img_2.png](img/img_2.png){:width="20%"}  
-當收到MQTT訊息後，使用此積木取得MQTT訊息的數據。
+**Obtaining data**
+![img_2.png](img/img_2.png){:width="20%"}
+After receiving an MQTT message, use this block to obtain the data in the message.
 
-**處理創客雲數據**  
-![img_3.png](img/img_3.png){:width="30%"}  
-將收到的創客雲MQTT訊息處理，並分成鍵值對。
+**Processing Maker Cloud Data**
+![img_3.png](img/img_3.png){:width="30%"}
+This block processes the received Maker Cloud MQTT messages and divides them into key-value pairs.
 
-**取得值**  
-![img_4.png](img/img_4.png){:width="15%"}  
-因應鍵取得值
+**Getting a value**
+![img_4.png](img/img_4.png){:width="15%"}
+This block gets a value in response to receiving a key
 
-## 訂閱鍵值對訊息
-#### 學習重點
-- 學習如何透過AI2從訂閱的主題收到鍵值對訊息
+## Receiving key-value pair messages
+#### Learning Focus
+- Learn how to receive key-value pair messages from subscribed topics through M5Stack
 
-#### 目標
-- 訂閱主題
-- 從創客雲接收MQTT鍵值對訊息
+#### Goals
+- Subscribe to topics
+- Receive MQTT key-value pair messages from Maker Cloud
 
-在此練習，使用者將會接收在發布練習中的隨機數字，所以開始前請先參考M5Stack發布隨機數字。  
-[M5Stack發布隨機數字](../../../ch5_publish/m5stack/publish_m5stack/#_2)
+In this exercise, the user will receive random numbers from the program made in the  publishing exercise, so please refer to this link before starting.
+[Publishing random numbers through M5Stack](../../../ch5_publish/m5stack/publish_m5stack/#_2)
 
-**程式設計**
+**Designing the program**
 
-1. M5Stack連接Wi-Fi，然後把M5Stack連接到UiFlow
-2. 加入創客雲 UiFlow Custom  
-   [下載創客雲 UiFlow Custom](https://cutt.ly/makercloud)
-3. 加入連接到創客雲所需的積木
-4. 加入當按Button B，發布隨機數字到創客雲所需的積木  
-![img_7.png](img/img_7.png){:width="70%"}
-5. 加入「UiFlow訂閱積木」，輸入需訂閱的主題名稱
-6. 在「訂閱積木」中，加入「處理創客雲數據」積木。然後把「UiFlow取得數據」積木加到「Topic data」
-7. 在M5Stack的介面上加入「lable0」  
-![img_6.png](img/img_6.png){:width="40%"}
-8. 因為傳送到創客雲的鍵是「num」，所以「data key」是「num」。把「label0」的文字設為「取得值」積木，輸入「num」到「data key」  
-![img_5.png](img/img_5.png)
+1. Connect M5Stack to Wi-Fi, then connect M5Stack to UiFlow
+2. Add the Maker Cloud UiFlow Custom
+   [Download Maker Cloud UiFlow Custom](https://cutt.ly/makercloud)
+3. Add the building blocks required to connect to Maker Cloud
+4. Add the building blocks required to publish random numbers to Maker Cloud by clicking B
+   ![img_7.png](img/img_7.png){:width="70%"}
+5. Add a "UiFlow Subscription Block" and enter the topic name that you want to subscribe to
+6. In the Subscription Block, add the "Processing Maker Cloud Data" block. Then add the "UiFlow Get Data" block to "Topic data"
+7. Add "lable0" to the interface of M5Stack
+   ![img_6.png](img/img_6.png){:width="40%"}
+8. Because the key sent to Maker Cloud is "num", the "data key" is also "num". Set the text of "label0" as the "get value" block, and enter "num" to "data key"
+   ![img_5.png](img/img_5.png)
 
-完成編程後，把編程下載到M5Stack中。當按下「Button B」後，M5Stack會發布隨機數字到創客雲。
-同時，M5Stack會從同一主題接收隨機數字並在屏幕中顯示。
+When finished, download the programming to M5Stack. When Button B is pressed, M5Stack will post a random number to Maker Cloud.
+At the same time, M5Stack will receive random numbers from MakerCloud and display them on the screen.

@@ -1,73 +1,72 @@
-# 使用BBC micro:bit訂閱主題
-在編程訂閱主題訊息到創客雲前，使用者必先學習如何令micro:bit連接創客雲MQTT，連接方法可根據硬件參考上面的教學。  
-[使用BBC micro:bit連接創客雲](../../ch4_connect/microbit/connect_microbit.md)
+# Using BBC micro:bit to subscribe to topics
+Before programming and subscribing to topics on MakerCloud, the user must first connect the micro:bit to the Maker Cloud via MQTT. For instructions, refer to the following link.
+[Use BBC micro:bit to connect to MakerCloud](../../ch4_connect/microbit/connect_microbit.md)
 
 [TOC]
 
 ## KittenWiFi
-即使使用不同的micro:bit擴展板，只要成功連接創客雲後，便可以使用以下同樣的發布積木編程發布訊息。而以下使用Armour:bit作為示範。  
-**注意每次編程必須要在當啟動時先連接Wi-Fi和創客雲MQTT。**
-### 訂閱積木
-在創客雲擴展中，有不同類型的訂閱積木。
+Even if you use a different micro:bit expansion board, as long as you successfully connect to MakerCloud, you can use the same program blocks to publish messages. The following uses Armour:bit as a demonstration.
+**Note that you must connect to Wi-Fi and to MakerCloud via MQTT when you start each program.**
+### Subscription Blocks
+In the MakerCloud Extension, there are different types of subscription blocks.
 
-**訂閱主題**  
-![img_1.png](img/img_1.png){:width="25%"}  
-在連接創客雲後，透過KittenWiFi訂閱創客雲主題。  
-建議放在「當啟動時」之中及「連接創客雲MQTT」積木之後。
+**Subscribing to a Topic**
+![img_1.png](img/img_1.png){:width="25%"}
+After connecting to MakerCloud, this block subscribes to a MakerCloud topic via KittenWiFi.
+It is recommended to put it in "on start" and after the "Connect MakerCloud MQTT" block.
 
-**當MQTT "topic"收到文字訊息**  
-![img_2.png](img/img_2.png){:width="60%"}  
-當指定主題收到文字訊息，便會運行此積木
+**When a topic receives a text message (Event Trigger)**
+![img_2.png](img/img_2.png){:width="60%"}
+When the specified topic receives a text message, this building block will run
 
-**當MQTT "topic"收到鍵文字對訊息**  
-![img_3.png](img/img_3.png){:width="70%"}  
-當指定主題收到鍵文字對訊息，便會運行此積木
+**When a topic receives a key text pair message**
+![img_3.png](img/img_3.png){:width="70%"}
+When the specified receives a key text message, this block will run
+**When a topic receives a key-value message**
+![img_4.png](img/img_4.png){:width="70%"}
+When the specified topic receives a key-value pair message, this block will run.
 
-**當MQTT "topic"收到鍵值對訊息**  
-![img_4.png](img/img_4.png){:width="70%"}  
-當指定主題收到鍵值對訊息，便會運行此積木
+You can use the subscription blocks that correspond to the data type that you are using.
 
-使用者可以根據數據類型使用相對應的訂閱積木。
+### Receiving text messages
+#### Learning Focus
+- Learn how to receive text messages from subscribed topics via KittenWiFi
 
-### 訂閱文字訊息
-#### 學習重點
-- 學習如何透過KittenWiFi從訂閱的主題收到文字訊息
-
-#### 練習 - 向micro:bit打招呼
-##### 目標
-- 訂閱主題
-- 從創客雲接收MQTT訊息  
+#### Practice: Say "hello" to micro:bit
+##### Goals
+- Subscribe to topics
+- Receive MQTT messages from MakerCloud
 ![img_5.png](img/img_5.png){:width="90%"}
 
-**在Makecode編程前，我們需要在創客雲上:**
+**Before we program on MakerCloud, we need to prepare on MakerCloud:**
 
-1. 創建項目
-2. 創建主題
+1. Create a project
+2. Create a topic
 
-**然後便可到Makecode編程:**
+**Then you can program on MakeCode:**
 
-1. 新增專案
-2. 加入創客雲KittenWiFi擴展  
+1. Create a project
+2. Add the MakerCloud KittenWiFi extension
    [https://github.com/maxwong-scale/pxt-makercloud-V2]()
-3. 當啟動時:  
-   更新KittenWiFi接口、連接WiFi及創客雲MQTT
-4. 加入訂閱創客雲主題積木，然後複製並貼上需訂閱的主題名稱  
-![img_topic_message.png](img/img_topic_message.png){:width="70%"}
-</br></br>
+3. On start:
+   Update Armourbit port (put the port that the KittenWifi is plugged into), connect WiFi and Maker Cloud MQTT
+4. Add the "subscribe to topic" block, then copy and paste the name of the topic you are subscribing to
+   ![img_topic_message.png](img/img_topic_message.png){:width="70%"}
+   </br></br>
 ![img_7.png](img/img_7.png)
 </br></br>
-5. 加入「當MQTT 收到文字訊息」，然後貼上已訂閱的主題名稱  
-![img_8.png](img/img_8.png)
-</br></br>
-6. 把接收到的文字訊息顯示出來  
-![img_10.gif](img/img_10.gif){:width="40%"}
-</br></br>
-7. 下載編程到micro:bit
+5. Add the "When a topic receives a text message" block, and paste the name of the subscribed topic
+   ![img_8.png](img/img_8.png)
+   </br></br>
+6. Display the received text message on the micro:bit
+   ![img_10.gif](img/img_10.gif){:width="40%"}
+   </br></br>
+7. Download the program to micro:bit
 
-完成編程後，回到創客雲的項目主頁。  
-按下主題中的「詳細資料」按鈕，進入主題主頁。  
-在「發送消息到主題」的文字輸入框中，輸入「hello」，然後按「發送」。  
+When finished, return to the Internet of Things homepage of your project on MakerCloud.
+Press the "Details" button in the theme to enter the theme homepage.
+In the "Send Message to Topic" box, enter "hello" and click "Send".
 ![img_publishhello.gif](img/img_publishhello.gif)
 
-從創客雲發送訊息後，micro:bit上的LED便會顯示「hello」。  
+After the message is sent from MakerCloud, the LEDs on the micro:bit will display "hello".
 ![img_12.gif](img/img_12.gif){:width="40%"}

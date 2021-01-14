@@ -1,116 +1,113 @@
-# 使用BBC micro:bit發布訊息
-在編程發布訊息到創客雲前，使用者必先學習如何令micro:bit連接創客雲MQTT，連接方法可根據硬件參考上面的教學。  
-[使用BBC micro:bit連接創客雲](../../ch4_connect/microbit/connect_microbit.md)
+# Use BBC micro:bit to post messages
+Before programming and publishing messages to Maker Cloud, users must first connect micro:bit to Maker Cloud via MQTT. For instructions, refer to the following link.
+[Using BBC micro:bit to connect to Maker Cloud](../../ch4_connect/microbit/connect_microbit.md)
 
 [TOC]
 
 ## KittenWiFi
-即使使用不同的micro:bit擴展板，只要成功連接創客雲後，便可以使用以下同樣的發布積木編程發布訊息。而以下使用Armour:bit作為示範。  
-**注意每次編程必須要在當啟動時先連接Wi-Fi和創客雲MQTT。**
-### 發布訊息積木
-在創客雲擴展中，有不同類型的發布積木。
+Even if you use different micro:bit expansion boards, they can use the same program blocks to program and publish messages as long as they are successfully connected to Maker Cloud. The following uses Armour:bit as a demonstration.
+**Note that each program must initially connect to Wi-Fi and Maker Cloud MQTT. **
+### Post message blocks
+In the MakerCloud extension, there are different types of publishing program blocks.
 
-**發布文字訊息**  
-![img_1.png](img/img_1.png){:width="45%"}  
-透過KittenWiFi向創客雲發布一個文字訊息到主題
+**Publishing a text message**
+![img_1.png](img/img_1.png){:width="45%"}
+Publish a text message to a topic via KittenWiFi on Maker Cloud
 
-**發布鍵文字對訊息**  
-![img_2.png](img/img_2.png){:width="60%"}  
-透過KittenWiFi向創客雲發布一個鍵文字對訊息到主題
+**Publish a key text message**
+![img_2.png](img/img_2.png){:width="60%"}
+Publish a key text message to a topic via KittenWiFi on Maker Cloud
 
-**發布鍵值對訊息**  
-![img_3.png](img/img_3.png){:width="50%"}  
-透過KittenWiFi向創客雲發布一個鍵值對訊息到主題，創客雲上會自動建立對應的直線圖表
+**Publish a  key-value pair message**
+![img_3.png](img/img_3.png){:width="50%"}
+Publish a key-value message to a topic via KittenWiFi on Maker Cloud, and a corresponding line chart will be automatically created on MakerCloud
 
-**發布經緯度訊息**  
-![img_4.png](img/img_4.png){:width="70%"}  
-透過KittenWiFi向創客雲發布一個經緯度訊息到主題
+**Publishing latitude and longitude data points**
+![img_4.png](img/img_4.png){:width="70%"}
+Publish a latitude and longitude message to a topic via KittenWiFi on Maker Cloud
 
-使用者可以根據數據類型使用相對應的發布積木。
+Users can use the corresponding publishing blocks according to the data type they would like to send.
 
-### 發布文字訊息
-#### 學習重點
-- 學習如何透過KittenWiFi發布文字訊息到創客雲主題中
-
-#### 練習 - 向創客雲打招呼
-##### 目標
-當按下micro:bit的A按鈕，micro:bit便會發布文字訊息「hello」到創客雲。
+### Publishing a text message
+#### Learning Focus
+- Learn how to publish text messages to a topic on MakerCloud via KittenWiFi
+#### Exercise: Say hello to Maker Cloud
+##### Goal:
+When you press "A" on your micro:bit, it will post the text message "hello" to a topic on Maker Cloud.
 
 ![img_9.png](img/img_9.png){:width="70%"}
 
-**在Makecode編程前，我們需要在創客雲上:**
+**Before programming on Makecode, we need to be prepared on MakerCloud**
 
-1. 創建項目
-2. 創建主題
+1. Create a project
+2. Create a topic
 
-**然後便可到Makecode編程:**
+**Then you can program on MakeCode:**
 
-1. 新增專案
-2. 加入創客雲KittenWiFi擴展  
+1. Create a project
+2. Add the Maker Cloud KittenWiFi extension:
    [https://github.com/maxwong-scale/pxt-makercloud-V2]()
-3. 當啟動時:  
-   更新KittenWiFi接口、連接WiFi及創客雲MQTT
-4. 當按鈕「A」被按下:  
-   發布文字訊息
-![img_5.png](img/img_5.png)
-</br></br>
-5. 在創客雲複製主題名稱  
-![img/img_topic_message.png](img/img_topic_message.png){:width="80%"}
-</br></br>
-6. 貼上發佈文字訊息積木的"topic"中
-7. 在"message"中輸入"hello"  
-![img_7.png](img/img_7.png){:width="90%"}
-</br></br>
-8. 下載編程到micro:bit
+3. On start:
+   Update armour:bit port (put which port you have the KittenWifi plugged into), connect WiFi and Maker Cloud MQTT
+4. When the button "A" is pressed:
+   Publish a text message
+   ![img_5.png](img/img_5.png)
+   </br></br>
+5. Copy the topic name in Maker Cloud
+   ![img/img_topic_message.png](img/img_topic_message.png){:width="80%"}
+   </br></br>
+6. Paste in the "topic" of the publish text message block
+7. Enter "hello" in "message"
+   ![img_7.png](img/img_7.png){:width="90%"}
+   </br></br>
+8. Download the program to your micro:bit
+   When finished, return to your project homepage on MakerCloud.
+   After pressing A on your micro:bit, you can see the text messages sent from your micro:bit in the real-time data viewer.
+   ![img_8.png](img/img_8.png){:width="70%"}
 
-完成後，回到創客雲的項目主頁。  
-當按下micro:bit的A按鈕後，在即時數據紀錄便可以看到來自micro:bit的文字訊息。  
-![img_8.png](img/img_8.png){:width="70%"}
+### Publishing a key-value pair message
+#### Learning Focus
+- Learn how to publish key-value pairs to a Maker Cloud topic via KittenWiFi
+- Learn to create a line graph on Maker Cloud to display and record key-value pair messages
 
-### 發布鍵值對訊息
-#### 學習重點
-- 學習如何透過KittenWiFi發布鍵值對到創客雲主題中
-- 學習在創客雲上創建直線圖表達鍵值對訊息
-
-#### 練習 - 發布隨機數字
-##### 目標
-- 當按下micro:bit的A按鈕，micro:bit便會發布鍵值對訊息(隨機數字)到創客雲
-- 在創客雲上創建直線圖以顯示鍵值對
-
+#### Exercise: Post random numbers
+##### Goals
+-When you press A on your micro:bit, the micro:bit will publish a key-value pair message (a random number value) on Maker Cloud
+-Create a line graph on Maker Cloud to display and record key-value pairs
 ![img_10.png](img/img_10.png){:width="80%"}
 
-**在Makecode編程前，我們需要在創客雲上:**
+**Before programming on MakeCode, we need to be prepared on MakerCloud:**
 
-1. 創建項目
-2. 創建主題
+1. Create a project
+2. Create a theme
 
-**然後便可到Makecode編程:**
+**Then you can program on MakeCode:**
 
-1. 新增專案
-2. 加入創客雲KittenWiFi擴展  
+1. Create a project
+2. Add the Maker Cloud KittenWiFi extension:
    [https://github.com/maxwong-scale/pxt-makercloud-V2]()
-3. 當啟動時:  
-   更新KittenWiFi接口、連接WiFi及創客雲MQTT
-4. 當按鈕「A」被按下:  
-   發布鍵值對  
-![img_11.png](img/img_11.png)
-</br></br>
-注意: 發布積木中分別有**發布鍵文字對**和**發布鍵值對**，使用者可按數據類型使用
-5. 在創客雲複製主題名稱  
-![img_topic_randNum.png](img/img_topic_randNum.png){:width="80%"}
-</br></br>
-6. 貼上發佈文字訊息積木的"topic"中
-7. 在"key"中輸入"num"，在0中加入"隨機取數0-10"
-![img_13.png](img/img_13.png)
-</br></br>
-8. 下載編程到micro:bit
+3. On start:
+   Update armourbit port, connect WiFi and Maker Cloud MQTT
+4. When button "A" is pressed:
+   Publish a key-value pair
+   ![img_11.png](img/img_11.png)
+   </br></br>
+   Note: There are **publish key text pair** and **publish key-value pair** blocks available. Users can decdide which to use according to the type of data that they want to send.
+5. Copy the topic name in Maker Cloud
+   ![img_topic_randNum.png](img/img_topic_randNum.png){:width="80%"}
+   </br></br>
+6. Paste in the "topic" of the publish text message building block
+7. Enter "num" in "key" and add "random number 0-10" in 0
+   ![img_13.png](img/img_13.png)
+   </br></br>
+8. Download the program to micro:bit
+   
+When finished, return to the project homepage of Maker Cloud. 
+After pressing A on your micro:bit, you can see the key-value pair messages from your micro:bit in the real-time viewer record.
+   ![img_14.png](img/img_14.png){:width="70%"}
 
-完成後，回到創客雲的項目主頁。  
-當按下micro:bit的A按鈕後，在即時數據紀錄便可以看到來自micro:bit的鍵值對訊息。  
-![img_14.png](img/img_14.png){:width="70%"}
-
-然後重新整理項目主頁，並轉到圖表主頁。  
+Then refresh the project home page and go to the chart home page.
 ![img_tochartpage.png](img/img_tochartpage.png){:width="100%"}
 
-創客雲會為鍵值對自動紀錄鍵的名字和創建圖表。  
+Maker Cloud will automatically record the name of the key and create a chart for the key-value pair.
 ![img_15.png](img/img_15.png){:width="60%"}

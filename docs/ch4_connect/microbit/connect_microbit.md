@@ -1,6 +1,5 @@
 # Using BBC micro:bit to connect to MakerCloud
-Since the BBC
-micro:bit does not have the function of connecting to the Internet, so a Wi-Fi module must be added to enable the micro:bit to connect to the Internet.
+Since the BBC micro:bit cannot connect to the Internet, a Wi-Fi module must be added to enable the micro:bit to connect to the Internet.
 At the same time, as long as there are building blocks supporting MQTT in the expansion of the Wi-Fi module, data can be published to the Maker Cloud.
 There are many Wi-Fi modules on the market that support MQTT, but the steps to connect to MQTT are usually complicated.
 In order to simplify the connection to Maker Cloud, Maker Cloud provides a micro:bit expansion for commonly used Wi-Fi modules in the market. The KittenWiFi module made by KittenBot is the recommended Wi-Fi module.
@@ -8,6 +7,7 @@ In order to simplify the connection to Maker Cloud, Maker Cloud provides a micro
 [TOC]
 ## KittenWiFi
 KittenWiFi can be used with several different micro:bit expansion boards, but KittenBot's Armour:bit and Robot:bit are recommended.
+
 ![img_1.jpg](img/img_1.jpg){:width="50%"}
 
 KittenWiFi uses a 4pin anti-reverse interface; the 4 interfaces are G, V, A, B.

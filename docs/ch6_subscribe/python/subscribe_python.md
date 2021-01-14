@@ -1,133 +1,132 @@
-# 使用Python訂閱主題
-在編程訂閱訊息到創客雲前，使用者必先學習如何令Python連接創客雲MQTT，連接方法可參考上面的教學。  
-[使用Python連接創客雲](../../ch4_connect/python/connect_python.md)
+# Using Python to subscribe to topics on MakerCloud
+Before programming and subscribing to MakerCloud, users must first connect Python to Maker Cloud MQTT. For instructions, refer to the following link:
+[Using Python to connect to MakerCloud](../../ch4_connect/python/connect_python.md)
 
 [TOC]
 
-## 訂閱函數
-在創客雲 AI2 extension中，有不同類型的訂閱函數。
+## Subscription functions
+In the Maker Cloud extension on python, there are different types of subscription functions.
 
 #### MakerCloudMQTT.subscribe()
-訂閱創客雲主題
+This block subscribes to topics on MakerCloud
 ```python
 MakerCloudMQTT.subscribe(topic)
 ```
-**topic**  
-在「創客雲」上創建的主題名稱
+**Topic -**
+the topic name created on "Maker Cloud"
 
 #### MakerCloudMQTT.message_handler
-當收到文字訊息，便會運行此函數。  
-使用者需要先**自行定義**，然後指定到MakerCloudMQTT中。
+When a text message is received, this function will runs.
+**
+Define it by itself** first, then assign it to MakerCloudMQTT.
 ```python
 def message_handler(topic, message):
-    print('Topic: ' + topic + ' Message: ' + message)
+     print('Topic: '+ topic +' Message: '+ message)
 
 MakerCloudMQTT.message_handler = message_handler
 ```
 
-**topic**  
-訂閱了的主題名稱
+**Topic -**
+the name of the topic you are subscribed to
 
-**message**  
-收到的文字訊息
+**Message -**
+the received text message
 
 #### MakerCloudMQTT.key_message_handler
-當收到鍵文字對訊息，便會運行此函數。  
-使用者需要先**自行定義**，然後指定到MakerCloudMQTT中。
+When a key text message is received, this function will run.
+**Define it by itself** first, then assign it to MakerCloudMQTT.
 ```python
 def key_message_handler(topic, key, message):
-    print('Topic: ' + topic + 'Key: ' + key + ' Message: ' + message)
+     print('Topic: '+ topic +'Key:' + key + 'Message:' + message)
 
 MakerCloudMQTT.key_message_handler = key_message_handler
 ```
 
-**topic**  
-訂閱了的主題名稱
+**Topic -**
+the topic you are subscribed to
 
-**key**  
-收到的鍵
+**Key -**
+the key of the received text message
 
-**message**  
-收到的文字訊息
+**Message -**
+the text of the received message
 
 #### MakerCloudMQTT.key_value_handler
-當收到鍵值對訊息，便會運行此函數。  
-使用者需要先**自行定義**，然後指定到MakerCloudMQTT中。
+When a key-value pair message is received, this function will run.
+**Define it by itself** first, then assign it to MakerCloudMQTT.
 ```python
 def key_value_handler(topic, key, value):
-    print('Topic: ' + topic + 'Key: ' + key + ' Value:' ,value)
+     print('Topic: '+ topic +'Key:' + key + 'Value:' ,value)
 
 MakerCloudMQTT.key_value_handler = key_value_handler
 ```
 
-**topic**  
-訂閱了的主題名稱
+**Topic -**
+the topic that you are subscribed to
 
-**key**  
-收到的鍵
+**Key -**
+the key of the received message
 
-**value**  
-收到的值
+**Value -**
+the received value
 
 #### MakerCloudMQTT.coordinate_handler
-當收到鍵值對訊息，便會運行此函數。  
-使用者需要先**自行定義**，然後指定到MakerCloudMQTT中。
+When a latitude-longitude message is received, this function will run.
+**Define it by itself** first, then assign it to MakerCloudMQTT.
 ```python
 def coordinate_handler(topic, latitude, longitude):
-    print('Topic: ' + topic + 'Latitude: ',latitude + ' longitude:' ,Longitude)
+     print('Topic: '+ topic +'Latitude:',latitude +' longitude:' ,Longitude)
 
 MakerCloudMQTT.coordinate_handler = coordinate_handler
 ```
 
-**topic**  
-訂閱了的主題名稱
+**Topic -**
+The name of the topic you are subscribed to
 
-**latitude**  
-收到的緯度
+**Latitude -**
+The received latitude value
 
-**longitude**  
-收到的經度
+**Longitude -**
+The received longitude value
 
-## 訂閱文字訊息
-#### 學習重點
-- 學習如何透過Python從訂閱的主題收到文字訊息
+## Receiving text messages
+#### Learning Focus:
+- Learn how to receive text messages from subscribed topics through Python
 
-#### 目標
-- 訂閱主題
-- 從創客雲接收MQTT文字訊息
+#### Goals:
+- Subscribe to topics
+- Receive text messages from Maker Cloud
 
-**在Python編程前，我們需要在創客雲上:**
+**Before programming on Python, we need to prepare on MakerCloud:**
 
-1. 創建項目
-2. 創建主題
-3. 在創客雲複製主題名稱  
-![img_topic_message.png](img/img_topic_message.png){:width="70%"}
-
-
-**然後便可到Python編程:**
+1. Create a project
+2. Create a topic
+3. Copy the topic name in Maker Cloud
+   ![img_topic_message.png](img/img_topic_message.png){:width="70%"}
+   **Then you can program in Python:**
 ```python
 import MakerCloudMQTT
 
-MakerCloudMQTT.username = 'Max'
-# 貼上主題名稱
-topic = 'QQP4LRB0'
+MakerCloudMQTT.username ='Max'
+# Paste the topic name
+topic ='QQP4LRB0'
 
-# 定義message_handler
+# Define message_handler
 def message_handler(topic, message):
-    print('Topic: ' + topic + ' Message: ' + message)
+     print('Topic: '+ topic +' Message: '+ message)
 
-# 指定message_handler到MakerCloudMQTT.message_handler
+# Assign message_handler to MakerCloudMQTT.message_handler
 MakerCloudMQTT.message_handler = message_handler
-# 訂閱主題
+# Subscribe to topics
 MakerCloudMQTT.subscribe(topic)
 ```
 
-完成及運行編程後，回到創客雲的項目主頁。  
-按下主題中的「詳細資料」按鈕，進入主題主頁。  
-在「發送消息到主題」的文字輸入框中，輸入「hello」，然後按「發送」。  
+After finishing and running the program, return to your project's IOT homepage in Maker Cloud.
+Press the "Details" button in the topic to enter the topic homepage.
+In the "Send Message to Subject" box, enter "hello" and click "Send".
 ![img_publishhello.gif](img/img_publishhello.gif)
 
-回到Python程式，便會收到文字訊息:
+In the Python program, you will receive a text message:
 ```
 Topic: QQP4LRB0 Message: hello
 ```
