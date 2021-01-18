@@ -1,5 +1,5 @@
 # Publishing from MakerCloud
-In Maker Cloud, users can publish messages to topics from the topic homepage.
+In MakerCloud, users can publish messages to topics from the topic homepage.
 
 1. Press the "Details" button on the topic to enter the topic homepage
 2. Enter the text to be sent in the box called "Send Message to Subject"

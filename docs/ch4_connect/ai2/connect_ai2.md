@@ -6,7 +6,7 @@
 Since App Inventor 2 does not have the MQTT function, it is necessary to download the extension before connecting to MQTT.
 In order to facilitate using AI2, we have made a special extension for MakerCloud connecting to AI2:
 
-[創客雲 AI2 extension](extension/scale.MakerCloud.aix) (right click to save as new file）
+[MakerCloud AI2 extension](extension/scale.MakerCloud.aix) (right click to save as new file）
 
 ## Connecting to MakerCloud
 

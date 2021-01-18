@@ -1,8 +1,8 @@
 # Using BBC micro:bit to connect to MakerCloud
 Since the BBC micro:bit cannot connect to the Internet, a Wi-Fi module must be added to enable the micro:bit to connect to the Internet.
-At the same time, as long as there are building blocks supporting MQTT in the expansion of the Wi-Fi module, data can be published to the Maker Cloud.
+At the same time, as long as there are building blocks supporting MQTT in the expansion of the Wi-Fi module, data can be published to the MakerCloud.
 There are many Wi-Fi modules on the market that support MQTT, but the steps to connect to MQTT are usually complicated.
-In order to simplify the connection to Maker Cloud, Maker Cloud provides a micro:bit expansion for commonly used Wi-Fi modules in the market. The KittenWiFi module made by KittenBot is the recommended Wi-Fi module.
+In order to simplify the connection to MakerCloud, MakerCloud provides a micro:bit expansion for commonly used Wi-Fi modules in the market. The KittenWiFi module made by KittenBot is the recommended Wi-Fi module.
 
 [TOC]
 ## KittenWiFi
@@ -41,20 +41,20 @@ Then you can start programming on Makecode.
 #### New Project
 ![img_7.png](img/img_7.png)
 
-#### Join Maker Cloud KittenWiFi extension
+#### Join MakerCloud KittenWiFi extension
 1. Click "Advanced" -> "Extensions"
-2. Copy and paste the extension link of "Maker Cloud KittenWiFi"
+2. Copy and paste the extension link of "MakerCloud KittenWiFi"
    [https://github.com/scaleinnotech/pxt-makercloud-v2]()
 
 ![img_8.gif](img/img_8.gif)
 
-#### Connect Wi-Fi and Maker Cloud
+#### Connect Wi-Fi and MakerCloud
 **On Start:**
 First, set up KittenWiFi when the micro:bit starts.
 
 1. Configure the Armour:bit interface
 2. Connect Wi-Fi settings: Enter SSID and password
-3. Connect to Maker Cloud MQTT
+3. Connect to MakerCloud MQTT
 
 ![img_10.gif](img/img_10.gif)
 
@@ -67,8 +67,8 @@ After downloading the programming, users can watch to the LED lights on the micr
 |:-------------------------------------------:|:-------------------------------------------:|
 | ![img_11.gif](img/img_11.gif){:width="70%"} | ![img_12.gif](img/img_12.gif){:width="70%"} |
 
-After successfully connecting to Maker Cloud, users can add other programming to make micro:bit perform other MQTT commands.
-**Note that you must first connect Wi-Fi and Maker Cloud MQTT every time you program.**
+After successfully connecting to MakerCloud, users can add other programming to make micro:bit perform other MQTT commands.
+**Note that you must first connect Wi-Fi and MakerCloud MQTT every time you program.**
 
 
 ### Robot:bit V2.0
@@ -84,7 +84,7 @@ First, users need to know the interface information of KittenWiFi. The 4 interfa
 * A ------------> TX
 * B ------------> RX
 
-In Maker Cloud KittenWiFi extension, the default settings are:
+In MakerCloud KittenWiFi extension, the default settings are:
 
 * TX ------------> P2
 * RX ------------> P1
@@ -100,20 +100,20 @@ Then you can start programming on MakeCode
 #### Create Project
 ![img_7.png](img/img_7.png)
 
-#### Join Maker Cloud KittenWiFi extension
+#### Join MakerCloud KittenWiFi extension
 1. Click "Advanced" -> "Extensions"
-2. Copy and paste the extension link of "Maker Cloud KittenWiFi"  
+2. Copy and paste the extension link of "MakerCloud KittenWiFi"  
    [https://github.com/scaleinnotech/pxt-makercloud-v2]()
 
 ![img_8.gif](img/img_8.gif)
 
-#### Connect Wi-Fi and Maker Cloud
+#### Connect Wi-Fi and MakerCloud
 **On Start**
 First, set up KittenWiFi when the micro:bit starts.
 
 1. Setting the pin
 2. Connect Wi-Fi settings: Enter SSID and password
-3. Connect to Maker Cloud MQTT
+3. Connect to MakerCloud MQTT
 
 ![img_13.gif](img/img_13.gif)
 
@@ -126,5 +126,5 @@ After downloading the programming, users can watch to the LED lights on the micr
 |:-------------------------------------------:|:-------------------------------------------:|
 | ![img_11.gif](img/img_11.gif){:width="70%"} | ![img_12.gif](img/img_12.gif){:width="70%"} |
 
-After successfully connecting to Maker Cloud, users can add other programming to make their micro:bits perform other MQTT commands.
-**Note that you must first connect Wi-Fi and Maker Cloud MQTT every time you program.**
+After successfully connecting to MakerCloud, users can add other programming to make their micro:bits perform other MQTT commands.
+**Note that you must first connect Wi-Fi and MakerCloud MQTT every time you program.**

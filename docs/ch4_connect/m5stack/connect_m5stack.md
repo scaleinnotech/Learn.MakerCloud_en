@@ -15,7 +15,7 @@ In order to facilitate the connection of M5Stack and MakerCloud, users can downl
 2. Open the downloaded "MakerCloud1.m5b".
 ![img_3.gif](img/img_3.gif)
 </br></br>
-3. After opening the file, you can fine blocks that work with MakerCloud in Custom.
+3. After opening the file, you can find blocks that work with MakerCloud in Custom.
 ![img_4.png](img/img_4.png)
 
 #### Connect MakerCloud

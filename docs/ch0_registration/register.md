@@ -4,7 +4,7 @@
 ## Register with MakerCloud with Authorization Code
  Registering with MakerCloud using an Authorization Code  
 [https://makercloud.scaleinnotech.com/]()  
-![image.png](img/img_1.png){:width="60%"}
+![image.png](img/img_1.jpg){:width="60%"}
 
 Select “Register Account with Authorization Code”  
 ![img_2.png](img/img_2.png){:width="60%"}

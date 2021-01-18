@@ -1,5 +1,5 @@
 # Using Python to publish messages to MakerCloud
-Before publishing messages to Maker Cloud, users must first learn how to connect Python to Maker Cloud via MQTT. For instructions, refer to the following link:
+Before publishing messages to MakerCloud, users must first learn how to connect Python to MakerCloud via MQTT. For instructions, refer to the following link:
 [Using Python to connect to MakerCloud](../../ch4_connect/python/connect_python.md)
 
 [TOC]
@@ -7,23 +7,23 @@ Before publishing messages to Maker Cloud, users must first learn how to connect
 ## Publishing a message
 
 #### MakerCloudMQTT.publish_message()
-To publish a text message to a topic on Maker Cloud:
+To publish a text message to a topic on MakerCloud:
 ```python
 MakerCloudMQTT.publish_message(topic, message)
 ```
 **Topic -**
-the topic name created on "Maker Cloud"
+the topic name created on "MakerCloud"
 
 **Message -**
 the text message that you want to publish
 
 #### MakerCloudMQTT.publish_key_message()
-To publish a key text message to the topic on Maker Cloud:
+To publish a key text message to the topic on MakerCloud:
 ```python
 MakerCloudMQTT.publish_key_message(topic, key, message)
 ```
 **Topic -**  
-the topic name created on "Maker Cloud"
+the topic name created on "MakerCloud"
 
 **Key -**
 the key that you want to use
@@ -32,12 +32,12 @@ the key that you want to use
 The text message that you want to publish
 
 #### MakerCloudMQTT.publish_key_value()
-To publish a key-value message to Maker Cloud to the topic (the corresponding line chart will be automatically created on MakerCloud):
+To publish a key-value message to MakerCloud to the topic (the corresponding line chart will be automatically created on MakerCloud):
 ```python
 MakerCloudMQTT.publish_key_value(topic, key, value)
 ```
 **Topic -**
-the topic name created on "Maker Cloud"
+the topic name created on "MakerCloud"
 
 **Key -**
 the key that you want to use
@@ -46,12 +46,12 @@ the key that you want to use
 the value that you want to publish
 
 #### MakerCloudMQTT.publish_coordination()
-To Publish a latidude/longitude message to Maker Cloud to a topic (a corresponding line chart will be automatically created on MakerCloud):
+To Publish a latidude/longitude message to MakerCloud to a topic (a corresponding line chart will be automatically created on MakerCloud):
 ```python
 MakerCloudMQTT.publish_coordination(topic, latitude, longitude)
 ```
 **Topic -**
-the topic name created on "Maker Cloud"
+the topic name created on "MakerCloud"
 
 **Latitude -**
 the latitude you want to publish
@@ -72,7 +72,7 @@ Users can use the publishing function that corresponds to the type of data they 
 
 1. Create a project
 2. Create a topic
-3. Copy the topic name in Maker Cloud
+3. Copy the topic name in MakerCloud
    ![img/img_topic_message.png](img/img_topic_message.png){:width="80%"}
    
 **Then you can program in Python:**
@@ -86,7 +86,7 @@ topic ='QQP4LRB0'
 while 1:
      # Read input crossword
      message = input('Message:')
-     # Post text message to Maker Cloud theme
+     # Post text message to MakerCloud theme
      MakerCloudMQTT.publish_message(topic, message)
 ```
 
@@ -97,23 +97,23 @@ Message: from
 Message: Python
 ```
 
-On the project homepage of Maker Cloud, you can see the text messages published from python in the real-time data viewer.
+On the project homepage of MakerCloud, you can see the text messages published from python in the real-time data viewer.
 ![img_3.png](img/img_3.png){:width="70%"}
 ### Publishing a key-value pair message
 #### Learning Focus:
-- Learn how to publish key-value pairs to Maker Cloud topics through Python
-- Learn to create a line graph on Maker Cloud to display and record key-value pair messages
+- Learn how to publish key-value pairs to MakerCloud topics through Python
+- Learn to create a line graph on MakerCloud to display and record key-value pair messages
 
 #### Exercise: Publishing random numbers
 ##### Goals:
-- Publish key-value pair messages (random numbers) to Maker Cloud
-- Create a line graph on Maker Cloud to display and record key-value pairs
+- Publish key-value pair messages (random numbers) to MakerCloud
+- Create a line graph on MakerCloud to display and record key-value pairs
 
 **Before programming on python, we need to be prepared on MakerCloud:**
 
 1. Create a project
 2. Create a topic
-3. Copy the topic name in Maker Cloud
+3. Copy the topic name in MakerCloud
    ![img_topic_randNum.png](img/img_topic_randNum.png){:width="80%"}
 
 **Then you can program in python:**
@@ -128,19 +128,19 @@ topic ='QQP4LRB0'
 while 1:
      # Generate random numbers (1-10)
      randomInt = random.randint(1, 10)
-     # Publish key-value pairs (random numbers) to the maker cloud theme
+     # Publish key-value pairs (random numbers) to the Makercloud theme
      MakerCloudMQTT.publish_key_value(topic,'num', randomInt)
      print('Published: num =',randomInt)
      # Pause for 1 second
      time.sleep(1)
 
 ```
-When finished, return to the project homepage of Maker Cloud.
+When finished, return to the project homepage of MakerCloud.
 You can see the key-value pair messages from python in the real-time data viewer.
 ![img_6.png](img/img_6.png){:width="70%"}
 
 Then refresh the project home page and go to the chart home page.
 ![img_tochartpage.png](img/img_tochartpage.png){:width="100%"}
 
-Maker Cloud will automatically record the name of the key and create a chart for the key-value messages.
+MakerCloud will automatically record the name of the key and create a chart for the key-value messages.
 ![img_chart.png](img/img_chart.png){:width="60%"}

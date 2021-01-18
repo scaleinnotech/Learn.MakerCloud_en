@@ -1,11 +1,11 @@
 # Using Python to subscribe to topics on MakerCloud
-Before programming and subscribing to MakerCloud, users must first connect Python to Maker Cloud MQTT. For instructions, refer to the following link:
+Before programming and subscribing to MakerCloud, users must first connect Python to MakerCloud MQTT. For instructions, refer to the following link:
 [Using Python to connect to MakerCloud](../../ch4_connect/python/connect_python.md)
 
 [TOC]
 
 ## Subscription functions
-In the Maker Cloud extension on python, there are different types of subscription functions.
+In the MakerCloud extension on python, there are different types of subscription functions.
 
 #### MakerCloudMQTT.subscribe()
 This block subscribes to topics on MakerCloud
@@ -13,7 +13,7 @@ This block subscribes to topics on MakerCloud
 MakerCloudMQTT.subscribe(topic)
 ```
 **Topic -**
-the topic name created on "Maker Cloud"
+the topic name created on "MakerCloud"
 
 #### MakerCloudMQTT.message_handler
 When a text message is received, this function will runs.
@@ -95,13 +95,13 @@ The received longitude value
 
 #### Goals:
 - Subscribe to topics
-- Receive text messages from Maker Cloud
+- Receive text messages from MakerCloud
 
 **Before programming on Python, we need to prepare on MakerCloud:**
 
 1. Create a project
 2. Create a topic
-3. Copy the topic name in Maker Cloud
+3. Copy the topic name in MakerCloud
    ![img_topic_message.png](img/img_topic_message.png){:width="70%"}
    **Then you can program in Python:**
 ```python
@@ -121,7 +121,7 @@ MakerCloudMQTT.message_handler = message_handler
 MakerCloudMQTT.subscribe(topic)
 ```
 
-After finishing and running the program, return to your project's IOT homepage in Maker Cloud.
+After finishing and running the program, return to your project's IOT homepage in MakerCloud.
 Press the "Details" button in the topic to enter the topic homepage.
 In the "Send Message to Subject" box, enter "hello" and click "Send".
 ![img_publishhello.gif](img/img_publishhello.gif)

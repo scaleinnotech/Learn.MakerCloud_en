@@ -1,5 +1,5 @@
 # Using BBC micro:bit to subscribe to topics
-Before programming and subscribing to topics on MakerCloud, the user must first connect the micro:bit to the Maker Cloud via MQTT. For instructions, refer to the following link.
+Before programming and subscribing to topics on MakerCloud, the user must first connect the micro:bit to the MakerCloud via MQTT. For instructions, refer to the following link.
 [Use BBC micro:bit to connect to MakerCloud](../../ch4_connect/microbit/connect_microbit.md)
 
 [TOC]
@@ -49,7 +49,7 @@ You can use the subscription blocks that correspond to the data type that you ar
 2. Add the MakerCloud KittenWiFi extension
    [https://github.com/maxwong-scale/pxt-makercloud-V2]()
 3. On start:
-   Update Armourbit port (put the port that the KittenWifi is plugged into), connect WiFi and Maker Cloud MQTT
+   Update Armourbit port (put the port that the KittenWifi is plugged into), connect WiFi and MakerCloud MQTT
 4. Add the "subscribe to topic" block, then copy and paste the name of the topic you are subscribing to
    ![img_topic_message.png](img/img_topic_message.png){:width="70%"}
    </br></br>

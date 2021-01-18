@@ -1,11 +1,11 @@
 # Use App Inventor 2 to subscribe to topics
-Before programming and subscribing to topics on Maker Cloud, users must first learn how to connect App Inventor 2 to Maker Cloud via MQTT. For instructions, refer to the following link:
-[Using App Inventor 2 to connect to Maker Cloud](../../ch4_connect/ai2/connect_ai2.md)
+Before programming and subscribing to topics on MakerCloud, users must first learn how to connect App Inventor 2 to MakerCloud via MQTT. For instructions, refer to the following link:
+[Using App Inventor 2 to connect to MakerCloud](../../ch4_connect/ai2/connect_ai2.md)
 
 [TOC]
 
 ## Subscription blocks
-In Maker Cloud AI2 extension, there are different types of subscription blocks.
+In MakerCloud AI2 extension, there are different types of subscription blocks.
 
 **Subscribing to a Topic**
 ![img_1.png](img/img_1.png){:width="40%"}
@@ -35,7 +35,7 @@ Use the subscription block that corresponds to the data type you want to receive
 
 #### Goals:
 - Subscribe to topics
-- Receive MQTT text messages from Maker Cloud
+- Receive MQTT text messages from MakerCloud
 
 ![img_6.png](img/img_6.png){:width="90%"}
 
@@ -47,10 +47,10 @@ Use the subscription block that corresponds to the data type you want to receive
 **Then you can program on AI2:**
 1. Create a project
    </br></br>
-2. Add the Maker Cloud AI2 extension
+2. Add the MakerCloud AI2 extension
    [MakerCloud AI2 extension](../../ch4_connect/ai2/extension/scale.MakerCloud.aix) (right click to save a new file)
    </br></br>
-3. Add a "MakerCloud" title and "Tags" to Screen1
+3. Add the "MakerCloud" extension and a "Received Message" label to Screen1
    ![img_7.png](img/img_7.png){:width="40%"}
    </br></br>
 4. In the component properties of MakerCloud, set the USERNAME to "maxwong"
@@ -58,9 +58,9 @@ Use the subscription block that corresponds to the data type you want to receive
 
 **Designing the program**
 
-1. Add the Connect Maker Cloud Block to the "When Screen1 is initialized"
+1. Add the Connect MakerCloud Block to the "When Screen1 is initialized"
    </br></br>
-2. Add a "subscribe to Maker Cloud" topic block, then copy and paste the name of the topic you want to subscribe to.
+2. Add a "subscribe to MakerCloud" topic block, then copy and paste the name of the topic you want to subscribe to.
    ![img_topic_message.png](img/img_topic_message.png){:width="70%"}
    </br></br>
    ![img_10.png](img/img_10.png)   </br></br>
