@@ -23,7 +23,8 @@ When a key text message is received, this block will run.
 **When MakerCloud.keyValueMessageHandler**
 ![img_4.png](img/img_4.png){:width="55%"}
 When a key-value pair message is received, this block will run
-**當MakerCloud.coordinateMessageHandler**  
+
+**MakerCloud.coordinateMessageHandler**  
 ![img_5.png](img/img_5.png){:width="55%"}  
 When a latitude and longitude message is received, this block will run
 

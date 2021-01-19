@@ -19,7 +19,7 @@ After successfully creating an account, you can view the details of the authoriz
 ## Register with MakerCloud with the Activity Code
 Go to the MakerCloud homepage and click "Register Account"
 [https://makercloud.scaleinnotech.com/]()  
-![img_5.png](img/img_5.png){:width="60%"}
+![img_5.jpg](img/img_5.jpg){:width="60%"}
 
 Select "Register Account with Activity Code"  
 ![img_6.png](img/img_6.png){:width="60%"}
@@ -45,7 +45,7 @@ If you do not have an existing password, leave the "existing password" blank for
 ## Log in to MakerCloud
 If you register with a Google account, just log in with Google on the homepage, no password is required
 
-![img_9.png](img/img_9.png){:width="60%"}
+![img_9.jpg](img/img_9.jpg){:width="60%"}
 
 For non-Google users, you can enter your username, email address and password to log in  
 ![img_10.png](img/img_10.png){:width="60%"}

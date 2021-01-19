@@ -115,7 +115,7 @@ First, set up KittenWiFi when the micro:bit starts.
 2. Connect Wi-Fi settings: Enter SSID and password
 3. Connect to MakerCloud MQTT
 
-![img_13.gif](img/img_13.gif)
+![img_10.gif](img/img_10.gif)
 
 After completing the programming, the user can download the program to the micro:bit. If you don’t know how to download code to a micro:bit, you can go to the following tutorial webpage:  
 [https://microbit.org/get-started/first-steps/set-up/]()
