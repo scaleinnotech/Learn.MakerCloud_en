@@ -2,7 +2,7 @@ site_name: Learn.MakerCloud
 
 site_url: http://learn.makercloud.io/
 
-site_description: 學習利用創客雲輕鬆實踐IoT和A.I.
+site_description: Learn to use MakerCloud and easily practice IoT and A.I.
 
 nav:
   - MakerCloud: https://makercloud.io/

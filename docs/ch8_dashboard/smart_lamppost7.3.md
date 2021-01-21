@@ -18,11 +18,11 @@ If you have already made a dashboard, click on the three dots on the top right o
 
 ### Using and Customizing a Dashboard
 
-Underneath your new dashboard, you will see the charts you have most recently used or created. 
-By clicking on the 3 dots in the top right corners of the chart icons, you can then add them to the dashboard.
-This feature is available with any chart or widget you are using in MakerCloud, not just the ones that have been recently used
-Once you have added a chart or charts to your dashboard, reload the webpage to see your charts populate the dashboard.
-From your dashboard, you can still access the detail pages of the charts on your dashboard.
+- Underneath your new dashboard, you will see the charts you have most recently used or created. 
+- By clicking on the 3 dots in the top right corners of the chart icons, you can then add them to the dashboard.
+- This feature is available with any chart or widget you are using in MakerCloud, not just the ones that have been recently used
+- Once you have added a chart or charts to your dashboard, reload the webpage to see your charts populate the dashboard.
+- From your dashboard, you can still access the detail pages of the charts on your dashboard.
 
 ![img_3.gif](img/img_3.gif)
 

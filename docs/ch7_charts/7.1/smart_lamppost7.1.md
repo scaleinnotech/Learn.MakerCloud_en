@@ -22,18 +22,19 @@ You can also zoom on the X axis, Y axis or both.
 
 In the chart details page, you can view information about your data by clicking "History" on the right.
 You can look at the:
+
 - maximum and minimum
 - average
 - sum
 - count
 You can adjust the timeframe by which these are calculated with a custom start and stop time. 
   
-Additionally you can adjust the frequency with which your data information is calculated. There are 4 options: Month, Day, Hour, and Minute.
-For example: By customizing a 5-minute timeframe and selecting "minute", it will calculate the sum and average for each minute in which data was received inside the timeframe.
+- Additionally you can adjust the frequency with which your data information is calculated. There are 4 options: Month, Day, Hour, and Minute.
+- For example: By customizing a 5-minute timeframe and selecting "minute", it will calculate the sum and average for each minute in which data was received inside the timeframe.
 
 ![img_4.gif](img/img_4.gif)
 
-### Exercise: Publishing Temperature, Humidity, Light Level and Rain Level from a Powerbrick smart lamppost
+### Exercise: Publishing data from a Smart lamppost
 
 ##### Goal:
 Be able to continuously publish Temperature, Humidity, Light Level and Rain Level to MakerCloud
@@ -41,7 +42,7 @@ Be able to continuously publish Temperature, Humidity, Light Level and Rain Leve
 
 ###### Instructions:
 
-- Use your creativity to build your own lamppost that has a powerbrick rainlevel sensor, temperature/humidity sensor and brightness sensor.
+1. Use your creativity to build your own lamppost that has a powerbrick rainlevel sensor, temperature/humidity sensor and brightness sensor.
 - This is just an example:
 
 ![img_5.jpg](img/img_5.jpg){:width="50%"}
@@ -52,17 +53,16 @@ Be able to continuously publish Temperature, Humidity, Light Level and Rain Leve
 
 ![img_8.jpg](img/img_8.jpg){:width="50%"}
 
-- Create a project and topic in MakerCloud
-- On MakeCode, add the Powerbrick extension.
+2. Create a project and topic in MakerCloud
+On MakeCode, add the Powerbrick extension.
   
 ![img_9.gif](img/img_9.gif)
-
-- Program a forever loop in Makecode that publishes data every second
+3. Program a forever loop in Makecode that publishes data every second
 
  ![img_10.png](img/img_10.png)
   
-- View the data on MakerCloud with the data viewer and through the automatically created charts.
+4. View the data on MakerCloud with the data viewer and through the automatically created charts.
   
-![img_11.png](img/img_11.png)
+![img_11.png](img/img_11.png){:width="70"}
 
 You will be able to utilize the features of the chart detail page when viewing the data from your powerbrick Smart Lamppost.

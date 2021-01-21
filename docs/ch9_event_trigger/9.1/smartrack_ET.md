@@ -13,17 +13,19 @@ Enter a name for the applet, and add the blocks that you want to use. When you a
 
 ##### Triggers
 You can add three different riggers to your event trigger applet:
-- MQTT Trigger: this triggers the applet whenever a message is sent to the selected topic
-- Webhook Trigger: this triggers the applet whenever the named webhook is activated
-- AI Trigger: this has three subdivisions:
-  - Dialogflow Trigger: this triggers the applet whenever the named Dialogflow Intent is triggered
-  - Object Detection: this triggers the applet whenever the selected object is detected using MakerCloud's AI Object Detection
-  - Face Detection: this triggers the applet whenever a face is detected using MakerCloud's AI Face Detection
+
+- **MQTT Trigger:** this triggers the applet whenever a message is sent to the selected topic
+- **Webhook Trigger:** this triggers the applet whenever the named webhook is activated
+- **AI Trigger:** this has three subdivisions:
+1. _Dialogflow Trigger:_ this triggers the applet whenever the named Dialogflow Intent is triggered
+2. _Object Detection:_ this triggers the applet whenever the selected object is detected using MakerCloud's AI Object Detection
+3. _Face Detection:_ this triggers the applet whenever a face is detected using MakerCloud's AI Face Detection
     
 ![img_1.png](img/img_1.png)
     
 ##### Logic
 You can add MQTT-based if/then logic to your applet. 
+
 - Using Condition 1, you can check the contents of a general MQTT message on a topic using a variety of comparators.
 - Using Condition 2, you can check the contents of a message on a topic and data type using a variety of comparators. You can check the contents of key-value messages or simple messages sent to the selected data type.
   
@@ -38,20 +40,21 @@ You can add MQTT-based if/then logic to your applet.
 
 ##### Action/Response
 You can add two different actions and one response to your event trigger applet:
+
 - IFTTT Action: this activates the named IFTTT webhook with the specified values in the optional message.
 - MQTT Action: this publishes a simple of key-value message to the selected topic.
 - HTTP Response: this sends a simple or key-value http message.
 
 ![img_4.png](img/img_4.png)
 
-## Exercise: Control a Powerbrick Smart Hanger with a Powerbrick Smart Lamppost using Event Trigger
+## Exercise: Connect Smart Devices with Event Trigger
 
 **Goal:** to establish a connection between a Powerbrick Smart Lamppost and a Powerbrick Smart Hanger using two Event Trigger applets on MakerCloud
 
-##### Preparation on MakerCloud
+##### 1. Preparation on MakerCloud
 Create a project and two topics on MakerCloud (one of the topics will be for the lamppost, and the other will be for the hanger). Open a new event trigger applet.
 
-##### Powerbrick Construction
+##### 2. Powerbrick Construction
 Construct a powerbrick smart lamppost, as well as the powerbrick smart hanger.
 
 Here is an example for a smart lamppost:
@@ -66,27 +69,30 @@ Here is an example for a smart lamppost:
 
 Please view the instructions for the smart hanger here:
 
-#### Programming on MakeCode:
+#### 3. Programming on MakeCode:
 
-###### Programming for Smart Lamppost:
+###### 3.1 Programming for Smart Lamppost:
 Program the lamppost to constantly publish rain data to MakerCloud
 
 ![img_9.png](img/img_9.png)
 
-###### Programming for Smart Hanger:
+###### 3.2 Programming for Smart Hanger:
 Program the hanger to open and close based on messages it receives from MakerCloud
 
 ![img_10.png](img/img_10.png)
 
-#### Programming the Applets on MakerCloud:
-Program an "Opening" applet that: 
+#### 4. Programming the Applets on MakerCloud:
+
+###### Program an "Opening" applet that: 
+
 - Triggers when it receives a key-value message on the "Rain" data type that your lamppost is publishing to.
 - Uses logic to check if the rain level is above a threshold and:
   - Sends an "open" message to the hanger topic the rain level is under the threshold
 
 ![img_11.png](img/img_11.png)
 
-Program an "Closing" applet that:
+###### Program a "Closing" applet that:
+
 - Triggers when it receives a key-value message on the "Rain" data type that your lamppost is publishing to.
 - Uses logic to check if the rain level is above a threshold and:
   - Sends a "close" message to the lamppost topic if the rain level is above the threshold
