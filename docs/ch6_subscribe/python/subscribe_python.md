@@ -102,7 +102,9 @@ The received longitude value
 1. Create a project
 2. Create a topic
 3. Copy the topic name in MakerCloud
+
    ![img_topic_message.png](img/img_topic_message.png){:width="70%"}
+   
    **Then you can program in Python:**
 ```python
 import MakerCloudMQTT
@@ -124,6 +126,7 @@ MakerCloudMQTT.subscribe(topic)
 After finishing and running the program, return to your project's IOT homepage in MakerCloud.
 Press the "Details" button in the topic to enter the topic homepage.
 In the "Send Message to Subject" box, enter "hello" and click "Send".
+
 ![img_publishhello.gif](img/img_publishhello.gif)
 
 In the Python program, you will receive a text message:

@@ -73,7 +73,8 @@ Users can use the publishing function that corresponds to the type of data they 
 1. Create a project
 2. Create a topic
 3. Copy the topic name in MakerCloud
-   ![img/img_topic_message.png](img/img_topic_message.png){:width="80%"}
+
+![img/img_topic_message.png](img/img_topic_message.png){:width="80%"}
    
 **Then you can program in Python:**
 ```python
@@ -98,6 +99,7 @@ Message: Python
 ```
 
 On the project homepage of MakerCloud, you can see the text messages published from python in the real-time data viewer.
+
 ![img_3.png](img/img_3.png){:width="70%"}
 ### Publishing a key-value pair message
 #### Learning Focus:
@@ -114,7 +116,8 @@ On the project homepage of MakerCloud, you can see the text messages published f
 1. Create a project
 2. Create a topic
 3. Copy the topic name in MakerCloud
-   ![img_topic_randNum.png](img/img_topic_randNum.png){:width="80%"}
+
+![img_topic_randNum.png](img/img_topic_randNum.png){:width="80%"}
 
 **Then you can program in python:**
 ```python
@@ -137,10 +140,13 @@ while 1:
 ```
 When finished, return to the project homepage of MakerCloud.
 You can see the key-value pair messages from python in the real-time data viewer.
+
 ![img_6.png](img/img_6.png){:width="70%"}
 
 Then refresh the project home page and go to the chart home page.
+
 ![img_tochartpage.png](img/img_tochartpage.png){:width="100%"}
 
 MakerCloud will automatically record the name of the key and create a chart for the key-value messages.
+
 ![img_chart.png](img/img_chart.png){:width="60%"}

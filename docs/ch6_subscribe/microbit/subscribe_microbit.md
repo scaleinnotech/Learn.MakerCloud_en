@@ -51,22 +51,31 @@ You can use the subscription blocks that correspond to the data type that you ar
 3. On start:
    Update Armourbit port (put the port that the KittenWifi is plugged into), connect WiFi and MakerCloud MQTT
 4. Add the "subscribe to topic" block, then copy and paste the name of the topic you are subscribing to
-   ![img_topic_message.png](img/img_topic_message.png){:width="70%"}
-   </br></br>
+   
+![img_topic_message.png](img/img_topic_message.png){:width="70%"}
+</br></br>
+   
 ![img_7.png](img/img_7.png)
 </br></br>
+
 5. Add the "When a topic receives a text message" block, and paste the name of the subscribed topic
-   ![img_8.png](img/img_8.png)
-   </br></br>
+
+![img_8.png](img/img_8.png)
+</br></br>
+
 6. Display the received text message on the micro:bit
-   ![img_10.gif](img/img_10.gif){:width="40%"}
-   </br></br>
+   
+![img_10.gif](img/img_10.gif){:width="40%"}
+</br></br>
+
 7. Download the program to micro:bit
 
 When finished, return to the Internet of Things homepage of your project on MakerCloud.
 Press the "Details" button in the theme to enter the theme homepage.
 In the "Send Message to Topic" box, enter "hello" and click "Send".
+
 ![img_publishhello.gif](img/img_publishhello.gif)
 
 After the message is sent from MakerCloud, the LEDs on the micro:bit will display "hello".
+
 ![img_12.gif](img/img_12.gif){:width="40%"}

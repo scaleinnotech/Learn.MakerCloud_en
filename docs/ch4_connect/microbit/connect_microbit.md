@@ -32,7 +32,9 @@ With a brief understanding of KittenWiFi, we can connect it to different micro:b
 ### Armour:bit
 Since Armour:bit also uses a 4pin anti-reverse interface, it will be convenient to use.
 Connect KittenWiFi to Port 2 of the Armour:bit.  
-![img_6.png](img/img_6.png)  
+
+![img_6.png](img/img_6.png) 
+
 Then you can start programming on Makecode.
 
 #### Makecode for micro:bit
@@ -63,7 +65,7 @@ After completing the programming, the user can download the program to the micro
 
 After downloading the programming, users can watch to the LED lights on the micro:bit. The micro:bit will have different LED animations according to the connection status:
 
-|                Connecting to Wi-Fi                 |        Connected to Wi-Fi，Connecting to MQTT        |
+|             Connecting to Wi-Fi             |   Connected to Wi-Fi，Connecting to MQTT    |
 |:-------------------------------------------:|:-------------------------------------------:|
 | ![img_11.gif](img/img_11.gif){:width="70%"} | ![img_12.gif](img/img_12.gif){:width="70%"} |
 
@@ -90,6 +92,7 @@ In MakerCloud KittenWiFi extension, the default settings are:
 * RX ------------> P1
 
 For ease of use, users can connect to KittenWiFi with the default settings.
+
 ![img_14.png](img/img_14.png){:width="70%"}
 
 Then you can start programming on MakeCode
@@ -122,7 +125,7 @@ After completing the programming, the user can download the program to the micro
 
 After downloading the programming, users can watch to the LED lights on the micro:bit. The micro:bit will have different LED animations according to the connection status:
 
-|                Connecting to Wi-Fi                 |        Connected to Wi-Fi，Connecting to MQTT        |
+|             Connecting to Wi-Fi             |    Connected to Wi-Fi，Connecting to MQTT    |
 |:-------------------------------------------:|:-------------------------------------------:|
 | ![img_11.gif](img/img_11.gif){:width="70%"} | ![img_12.gif](img/img_12.gif){:width="70%"} |
 

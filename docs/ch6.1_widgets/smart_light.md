@@ -10,6 +10,7 @@ These buttons can:
 ## Creating a Push Button
 
 Click on "Chart" on the left and select "Push Button"
+
 ![img_1.gif](img/img_1.gif)
 
 Enter a name for your Toggle Button.
@@ -28,6 +29,7 @@ With both options you can select a color for your push button. There are a wide 
 ![img_4.gif](img/img_4.gif)
     
 Then, type in the "Active Value" or message you are sending and select a "Style" or input text below. This determines what your push button will look like.
+
 ![img_5.png](img/img_5.png)
 
 You do not need to put anything in "Output Type".
@@ -38,6 +40,7 @@ Click "Create Chart".
 ## Creating a Toggle Button
 
 Click on "Chart" on the left and select "Toggle Button"
+
 ![img_1.gif](img/img_3.gif)
 
 Enter a name for your Toggle Button.
@@ -58,6 +61,7 @@ With the Toggle Button, there are two values being sent and therefore two differ
 Select a Color for that side of the Toggle Button
 Then, type in the "Active Value" / "Inactive Value" or message you are sending. 
 Select a "Style" or input text below. This determines the appearance of the toggle button when it is on the side that you are working on. 
+
 ![img_6.png](img/img_6.png)
 
 You do not need to put anything in "Output Type".
@@ -81,4 +85,4 @@ Click "Create Chart".
 
 When you complete the programming and preparation on MakerCloud, you should be able to control your micro:bit like this:
 
-![img_8.gif](img/img_9.gif)
+![img_8.gif](img/img_8.gif)

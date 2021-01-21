@@ -29,10 +29,13 @@ nav:
       - App Inventor 2: ch6_subscribe/ai2/subscribe_ai2.md
       - Python: ch6_subscribe/python/subscribe_python.md
       - M5Stack: ch6_subscribe/m5stack/subscribe_m5stack.md
-  - MakerCloud-Widgets:
+  - MakerCloud - Widgets:
       - Push and Toggle Buttons: ch6.1_widgets/smart_light.md
-  - MakerCloud-Charts:
-      - Chart Detail Features: ch7_charts/smart_lamppost7.1.md
+  - MakerCloud - Charts:
+      - Chart Detail Features: ch7_charts/7.1/smart_lamppost7.1.md
+      - Customizable Chart Features: ch7_charts/7.2/smart_lamppost7.2.md
+  - MQTT - Event Trigger:
+      - Event Trigger Applet: ch9_event_trigger/9.1/smartrack_ET.md
 theme: readthedocs
 
 copyright: ©Copyright SCALE Innotech Limited

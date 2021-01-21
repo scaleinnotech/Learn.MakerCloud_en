@@ -35,24 +35,34 @@ Users can use the programming blocks of MakerCloud from Custom to publish messag
    [Download MakerCloud UiFlow Custom](https://cutt.ly/makercloud)
 
 3. Double-click the B Button of M5Stack in UiFlow to add the "Button B wasPressed" block
+   
    ![img_3.png](img/img_3.png){:width="100%"}
    </br></br>
+   
 4. In the "Button B wasPressed" building block, add the key-value pair message block from MakerCloud Custom.
+   
    ![img_5.png](img/img_5.png){:width="60%"}
    </br></br>
+   
 5. Copy the topic name in MakerCloud
+   
    ![img_topic_randNum.png](img/img_topic_randNum.png){:width="80%"}
    </br></br>
+   
 6. Paste the topic name in "Topic", enter "num" in "key", and add a "random integer from 0 to 10" block in "value"
+   
    ![img_6.png](img/img_6.png){:width="65%"}
    </br></br>
    
 When finished, return to the project homepage of MakerCloud.
    When you press the button, you can see the key-value pair message from your app in the real-time data viewer.
+
    ![img_7.png](img/img_7.png){:width="70%"}
 
 Then refresh the project home page and go to the chart home page.
+
 ![img_tochartpage.png](img/img_tochartpage.png){:width="100%"}
 
 MakerCloud will automatically record the name of the key and create a chart to display and record the key-value pair.
+
 ![img_8.png](img/img_8.png){:width="80%"}
