@@ -36,6 +36,11 @@ nav:
       - Customizable Chart Features: ch7_charts/7.2/smart_lamppost7.2.md
   - MQTT - Event Trigger:
       - Event Trigger Applet: ch9_event_trigger/9.1/smartrack_ET.md
+  - MakerCloud - Location:
+      - Location Features: ch10_location/makercloud_location.md
+  - MakerCloud - AI:
+      - Face Detection: ch11_AI/11.1/face_detection.md
+      - Object Detection: ch11_AI/11.2/object_detection.md
 theme: readthedocs
 
 copyright: ©Copyright SCALE Innotech Limited
