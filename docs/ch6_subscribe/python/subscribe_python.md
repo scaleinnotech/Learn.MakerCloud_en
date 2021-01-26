@@ -7,18 +7,17 @@ Before programming and subscribing to MakerCloud, users must first connect Pytho
 ## Subscription functions
 In the MakerCloud extension on python, there are different types of subscription functions.
 
-#### MakerCloudMQTT.subscribe()
+##### MakerCloudMQTT.subscribe()
 This block subscribes to topics on MakerCloud
 ```python
 MakerCloudMQTT.subscribe(topic)
 ```
 **Topic -**
-the topic name created on "MakerCloud"
+the topic name created on MakerCloud
 
-#### MakerCloudMQTT.message_handler
-When a text message is received, this function will runs.
-**
-Define it by itself** first, then assign it to MakerCloudMQTT.
+##### MakerCloudMQTT.message_handler
+When a text message is received, this function will run.
+**Define it by itself** first, then assign it to MakerCloudMQTT.
 ```python
 def message_handler(topic, message):
      print('Topic: '+ topic +' Message: '+ message)
@@ -32,7 +31,7 @@ the name of the topic you are subscribed to
 **Message -**
 the received text message
 
-#### MakerCloudMQTT.key_message_handler
+##### MakerCloudMQTT.key_message_handler
 When a key text message is received, this function will run.
 **Define it by itself** first, then assign it to MakerCloudMQTT.
 ```python
@@ -51,7 +50,7 @@ the key of the received text message
 **Message -**
 the text of the received message
 
-#### MakerCloudMQTT.key_value_handler
+##### MakerCloudMQTT.key_value_handler
 When a key-value pair message is received, this function will run.
 **Define it by itself** first, then assign it to MakerCloudMQTT.
 ```python
@@ -70,7 +69,7 @@ the key of the received message
 **Value -**
 the received value
 
-#### MakerCloudMQTT.coordinate_handler
+##### MakerCloudMQTT.coordinate_handler
 When a latitude-longitude message is received, this function will run.
 **Define it by itself** first, then assign it to MakerCloudMQTT.
 ```python
@@ -95,7 +94,7 @@ The received longitude value
 
 #### Goals:
 - Subscribe to topics
-- Receive text messages from MakerCloud
+- Receive text messages from MakerCloud and display them
 
 **Before programming on Python, we need to prepare on MakerCloud:**
 
@@ -129,7 +128,7 @@ In the "Send Message to Subject" box, enter "hello" and click "Send".
 
 ![img_publishhello.gif](img/img_publishhello.gif)
 
-In the Python program, you will receive a text message:
+In the Python program, you should receive a text message:
 ```
 Topic: QQP4LRB0 Message: hello
 ```

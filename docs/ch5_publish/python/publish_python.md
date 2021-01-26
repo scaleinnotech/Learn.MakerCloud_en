@@ -6,8 +6,8 @@ Before publishing messages to MakerCloud, users must first learn how to connect 
 
 ## Publishing a message
 
-#### MakerCloudMQTT.publish_message()
-To publish a text message to a topic on MakerCloud:
+##### MakerCloudMQTT.publish_message()
+Publishes a text message to a topic on MakerCloud:
 ```python
 MakerCloudMQTT.publish_message(topic, message)
 ```
@@ -17,8 +17,8 @@ the topic name created on "MakerCloud"
 **Message -**
 the text message that you want to publish
 
-#### MakerCloudMQTT.publish_key_message()
-To publish a key text message to the topic on MakerCloud:
+##### MakerCloudMQTT.publish_key_message()
+Publishes a key text message to the topic on MakerCloud:
 ```python
 MakerCloudMQTT.publish_key_message(topic, key, message)
 ```
@@ -31,8 +31,8 @@ the key that you want to use
 **Message -**
 The text message that you want to publish
 
-#### MakerCloudMQTT.publish_key_value()
-To publish a key-value message to MakerCloud to the topic (the corresponding line chart will be automatically created on MakerCloud):
+##### MakerCloudMQTT.publish_key_value()
+Publishes a key-value message to MakerCloud to the topic (the corresponding line chart will be automatically created on MakerCloud):
 ```python
 MakerCloudMQTT.publish_key_value(topic, key, value)
 ```
@@ -45,8 +45,8 @@ the key that you want to use
 **Value -**
 the value that you want to publish
 
-#### MakerCloudMQTT.publish_coordination()
-To Publish a latidude/longitude message to MakerCloud to a topic (a corresponding line chart will be automatically created on MakerCloud):
+##### MakerCloudMQTT.publish_coordination()
+Publishes a latidude/longitude message to MakerCloud to a topic (a corresponding line chart will be automatically created on MakerCloud):
 ```python
 MakerCloudMQTT.publish_coordination(topic, latitude, longitude)
 ```
@@ -61,14 +61,14 @@ the longitude you want to publish
 
 Users can use the publishing function that corresponds to the type of data they want to send.
 
-## Publishing a text message
+### Application: Publishing a text message
 #### Learning Focus
-- Learn how to use Python to publish text messages to topics on MakerClou
+- Learn how to use Python to publish text messages to topics on MakerCloud
 
 #### Exercise:
 - Receive text input and publish it to a topic on MakerCloud.
 
-**Before programming on python, we need to be prepared on MakerCloud:**
+**Preparation on MakerCloud:**
 
 1. Create a project
 2. Create a topic
@@ -76,7 +76,7 @@ Users can use the publishing function that corresponds to the type of data they 
 
 ![img/img_topic_message.png](img/img_topic_message.png){:width="80%"}
    
-**Then you can program in Python:**
+**Programming in Python:**
 ```python
 import MakerCloudMQTT
 
@@ -98,20 +98,20 @@ Message: from
 Message: Python
 ```
 
-On the project homepage of MakerCloud, you can see the text messages published from python in the real-time data viewer.
+On the project homepage of MakerCloud, you should see the text messages published from python in the real-time data viewer.
 
 ![img_3.png](img/img_3.png){:width="70%"}
-### Publishing a key-value pair message
+### Application: Publishing a key-value pair message
 #### Learning Focus:
 - Learn how to publish key-value pairs to MakerCloud topics through Python
-- Learn to create a line graph on MakerCloud to display and record key-value pair messages
+- Create a line graph on MakerCloud to display and record key-value pair messages
 
 #### Exercise: Publishing random numbers
 ##### Goals:
 - Publish key-value pair messages (random numbers) to MakerCloud
 - Create a line graph on MakerCloud to display and record key-value pairs
 
-**Before programming on python, we need to be prepared on MakerCloud:**
+**Preparation on MakerCloud:**
 
 1. Create a project
 2. Create a topic
@@ -119,7 +119,7 @@ On the project homepage of MakerCloud, you can see the text messages published f
 
 ![img_topic_randNum.png](img/img_topic_randNum.png){:width="80%"}
 
-**Then you can program in python:**
+**Programming in python:**
 ```python
 import MakerCloudMQTT
 import random
@@ -139,7 +139,7 @@ while 1:
 
 ```
 When finished, return to the project homepage of MakerCloud.
-You can see the key-value pair messages from python in the real-time data viewer.
+You should see the key-value pair messages from python in the real-time data viewer.
 
 ![img_6.png](img/img_6.png){:width="70%"}
 

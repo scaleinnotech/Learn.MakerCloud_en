@@ -53,7 +53,7 @@ To continuously publish rain data to MakerCloud, and to have an email alert sent
 - Click "Receive a web request". You may be prompted to connect the webhook service to your IFTTT account.
 - Type in an event name such as "rain_alert". Click "Create Trigger"
   
-![img_7.png](img/img_7.png)
+![img_7.gif](img/img_7.gif)
 
 - Click "Add" on the "Then That" block.
 - When you reach the "Choose a Service" Menu, enter in the search bar "email". Select "email".
@@ -69,7 +69,7 @@ To continuously publish rain data to MakerCloud, and to have an email alert sent
 - You will be given an overview of your Applet. Click "Continue".
 - Then you will be prompted to review your applet. You can edit the title if you want. Click "Finish" when you are done editing the applet.
 
-![img_8.png](img/img_8.png)
+![img_8.gif](img/img_8.gif)
 
 ##### Finishing the Event Trigger Applet in MakerCloud
 
@@ -87,7 +87,7 @@ To continuously publish rain data to MakerCloud, and to have an email alert sent
 - As previously discussed, you can enter text or numbers into the three values in the "Optional Message" input box.
 - When finished, click "Edit" or "Create" on the bottom right.
 
-After you complete all of the steps, you should receive email alerts when the rain level on your sensor breaches the threshold that you programmed.
+After you complete these steps, you should receive email alerts when the rain level on your sensor breaches the threshold that you programmed.
 
 ![img_11.png](img/img_11.png)
 

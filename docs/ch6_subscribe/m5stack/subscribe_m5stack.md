@@ -45,8 +45,7 @@ In this exercise, the user will receive random numbers from the program made in 
 **Designing the program**
 
 1. Connect M5Stack to Wi-Fi, then connect M5Stack to UiFlow
-2. Add the MakerCloud UiFlow Custom
-   [Download MakerCloud UiFlow Custom](https://cutt.ly/makercloud)
+2. [Download the MakerCloud UiFlow Custom](https://cutt.ly/makercloud)
 3. Add the building blocks required to connect to MakerCloud
 4. Add the building blocks required to publish random numbers to MakerCloud by clicking B
    
@@ -54,7 +53,7 @@ In this exercise, the user will receive random numbers from the program made in 
 
 5. Add a "UiFlow Subscription Block" and enter the topic name that you want to subscribe to
 6. In the Subscription Block, add the "Processing MakerCloud Data" block. Then add the "UiFlow Get Data" block to "Topic data"
-7. Add "lable0" to the interface of M5Stack
+7. Add "label0" to the interface of M5Stack
    
 ![img_6.png](img/img_6.png){:width="40%"}
 
@@ -63,4 +62,4 @@ In this exercise, the user will receive random numbers from the program made in 
 ![img_5.png](img/img_5.png)
 
 When finished, download the programming to M5Stack. When Button B is pressed, M5Stack will post a random number to MakerCloud.
-At the same time, M5Stack will receive random numbers from MakerCloud and display them on the screen.
+At the same time, M5Stack should receive random numbers from MakerCloud and display them on the screen.

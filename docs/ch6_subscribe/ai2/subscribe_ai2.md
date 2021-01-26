@@ -40,25 +40,26 @@ When a latitude and longitude message is received, this block will run
 
 Use the subscription block that corresponds to the data type you want to receive.
 
-## Subscribing and receiving text messages
+## Subscribing to topics and receiving text messages
 #### Learning Focus:
 - Learn how to receive text messages from subscribed topics through AI2
 
 #### Goals:
 - Subscribe to topics
-- Receive MQTT text messages from MakerCloud
+- Receive MQTT text messages from MakerCloud and display them on the screen
 
 ![img_6.png](img/img_6.png){:width="90%"}
 
-**Before programming on AI2, we need to be prepared on MakerCloud:**
+**Preparation on MakerCloud:**
 
 1. Create a project
 2. Create a topic
 
-**Then you can program on AI2:**
+**Programming on AI2:**
+
 1. Create a project
    </br></br>
-2. Add the MakerCloud AI2 extension
+2. Add the 
    [MakerCloud AI2 extension](../../ch4_connect/ai2/extension/scale.MakerCloud.aix) (right click to save a new file)
    </br></br>
 3. Add the "MakerCloud" extension and a "Received Message" label to Screen1
@@ -96,7 +97,7 @@ In the text input box of "Send Message to Subject", enter "hello" and click "Sen
 
 ![img_publishhello.gif](img/img_publishhello.gif)
 
-The label on the App will show "hello".
+The label on the App should show "hello".
 
 **Note: If you subscribe to more than one topic, you should use logic blocks to check the topic after receiving the message and before displaying it**
 
