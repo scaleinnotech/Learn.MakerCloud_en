@@ -41,6 +41,10 @@ nav:
   - MakerCloud - AI:
       - Face Detection: ch11_AI/11.1/face_detection.md
       - Object Detection: ch11_AI/11.2/object_detection.md
+  - Smart City:
+      - Smart Light:
+      - Smart Lamppost:
+      - Smart Hanger:
 theme: readthedocs
 
 copyright: ©Copyright SCALE Innotech Limited
