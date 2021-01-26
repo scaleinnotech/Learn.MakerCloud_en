@@ -22,7 +22,7 @@ IFTTT will allow you to create 3 applets without a paid subscription. We will ex
 To continuously publish rain data to MakerCloud, and to have an email alert sent whenever the rain level breaches a specified threshhold.
 
 ##### Preparation on MakerCloud:
-- If you have not yet completed the connection between the smart lamppost and smarthanger with event trigger, then create a project, topic and data type/
+- If you have not yet completed the connection between the smart lamppost and smarthanger with event trigger, then create a project, topic and data type.
 - If you already have completed that exercise, than go to that project. 
 
 ##### Programming and Publishing with Microbit:

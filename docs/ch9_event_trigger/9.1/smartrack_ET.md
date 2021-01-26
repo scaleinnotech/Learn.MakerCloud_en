@@ -83,7 +83,7 @@ Program the hanger to open and close based on messages it receives from MakerClo
 
 #### 4. Programming the Applets on MakerCloud:
 
-###### Program an "Opening" applet that: 
+###### 4.1 Program an "Opening" applet that: 
 
 - Triggers when it receives a key-value message on the "Rain" data type that your lamppost is publishing to.
 - Uses logic to check if the rain level is above a threshold and:
@@ -91,13 +91,15 @@ Program the hanger to open and close based on messages it receives from MakerClo
 
 ![img_11.png](img/img_11.png)
 
-###### Program a "Closing" applet that:
+###### 4.2 Program a "Closing" applet that:
 
 - Triggers when it receives a key-value message on the "Rain" data type that your lamppost is publishing to.
 - Uses logic to check if the rain level is above a threshold and:
   - Sends a "close" message to the lamppost topic if the rain level is above the threshold
 
 ![img_12.png](img/img_12.png)
+
+Note that there must be two topics, one for the hanger and one for the lamppost. They cannot operate on the same topic.
 
 This should connect the smart lamppost and smart hanger; here is an example of what it should look like:
 

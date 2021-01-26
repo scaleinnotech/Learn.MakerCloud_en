@@ -9,6 +9,8 @@ These buttons can:
 
 ## Creating a Push Button
 
+Create a project and topic in MakerCloud.
+
 Click on "Chart" on the left and select "Push Button"
 
 ![img_1.gif](img/img_1.gif)
@@ -39,6 +41,8 @@ Click "Create Chart".
 
 ## Creating a Toggle Button
 
+Create a project and topic in MakerCloud.
+
 Click on "Chart" on the left and select "Toggle Button"
 
 ![img_1.gif](img/img_3.gif)
@@ -57,10 +61,10 @@ There are two options:
 A Toggle Button functions like two push buttons at the same time. Each time you click the button it alternates between the two values or messages like a switch. You will need to determine an "Active Value" and an "Inactive Value", following these steps for both values.
 
 With the Toggle Button, there are two values being sent and therefore two different appearances for each button. You must perform these steps twice.
-"
-Select a Color for that side of the Toggle Button
-Then, type in the "Active Value" / "Inactive Value" or message you are sending. 
-Select a "Style" or input text below. This determines the appearance of the toggle button when it is on the side that you are working on. 
+
+- Select a Color for that side of the Toggle Button.
+- Then, type in the "Active Value" / "Inactive Value" or message you are sending. 
+- Select a "Style" or input text below. This determines the appearance of the toggle button when it is on the side that you are working on. 
 
 ![img_6.png](img/img_6.png)
 
@@ -79,7 +83,7 @@ Click "Create Chart".
 - Create two Push buttons: One that sends a value of 0 to your data type, and another that sends a value of 1.
 - Create a Toggle Button that sends an "Active Value" of 1 and an "Inactive Value" of 0 to that same data type. 
 - *With these buttons, you should be able to send values of 1 and 0 to your data type.*
-- *Then, use MakeCode to program your micro:bit to turn on when your data type receives a value of 1 and to turn off when it receives a value of 0.
+- *Then, use MakeCode to program your micro:bit to turn on when your data type receives a value of 1 and to turn off when it receives a value of 0.*
 
 ![img_7.png](img/img_7.png)
 

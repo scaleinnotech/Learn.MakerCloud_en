@@ -17,4 +17,23 @@ Using MakerCloud's location features, users can record and monitor the locations
 
 ![img_2.gif](img/img_2.gif)
 
+### Exercise: Changing location from Microbit
+#### Goal: To use the buttons on your micro:bit to update the location information on MakerCloud, and view the location changes in MakerCloud
 
+#### Preparation on MakerCloud and with micro:bit
+Create a project, topic and data type.
+Connect your micro:bit to the KittenWifi, Armourbit and battery pack.
+
+#### Programming on MakeCode
+You are going to program your microbit to send three different locations to MakerCloud.
+- First have the connection code
+- Then create a variable that is called "LocationTopic". 
+- In the "On Start" block, set it to the name of your topic that you can copy in MakerCloud.
+- Then, add four input blocks (when button A, button B,button A+B is pressed, and when the microbit is shook).
+- In these input blocks, add two latitude/longitude location updates, and two publishing key-value message blocks to the data type you created.
+![img_3.png](img/img_3.png)
+
+Once you download the program to your micro:bit, you should see the location updating in the chart feature.
+
+![img_4.gif](img/img_4.gif)
+![img_5.gif](img/img_5.gif)
