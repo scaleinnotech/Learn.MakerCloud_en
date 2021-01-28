@@ -18,17 +18,22 @@ nav:
       - Python: ch4_connect/python/connect_python.md
       - M5Stack: ch4_connect/m5stack/connect_m5stack.md
       - Kittenbot KOI: ch4_connect/KOI/connect_KOI.md
+      - Arduino: ch4_connect/arduino/connect_arduino.md
   - MQTT－Publish:
       - MakerCloud: ch5_publish/makercloud/makercloud.md
       - BBC micro:bit: ch5_publish/microbit/publish_microbit.md
       - App Inventor 2: ch5_publish/ai2/publish_ai2.md
       - Python: ch5_publish/python/publish_python.md
       - M5Stack: ch5_publish/m5stack/publish_m5stack.md
+      - KOI: ch5_publish/KOI/publish_KOI.md
+      - Arduino: ch5_publish/arduino/publish_arduino.md
   - MQTT－Subscription:
       - BBC micro:bit: ch6_subscribe/microbit/subscribe_microbit.md
       - App Inventor 2: ch6_subscribe/ai2/subscribe_ai2.md
       - Python: ch6_subscribe/python/subscribe_python.md
       - M5Stack: ch6_subscribe/m5stack/subscribe_m5stack.md
+      - KOI: ch6_subscribe/KOI/subscribe_KOI.md
+      - Arduino: ch6_subscribe/arduino/subscribe_arduino.md
   - MakerCloud - Widgets:
       - Push and Toggle Buttons: ch6.1_widgets/microbit_light.md
   - MakerCloud - Charts:

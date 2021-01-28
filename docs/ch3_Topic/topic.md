@@ -26,3 +26,12 @@ After creating more than one topic, you can switch between the different topic t
 After changing the topic subscription, go back to the IoT homepage, and you will see that the topic description has been changed.
 
 ![img_4.png](img/img_4.png){:width="100%"}
+
+## Creating a Data Type
+
+1. Enter the IoT homepage of your project.
+2. Click "Create Data Type".
+3. Enter the name of the data type and the key. You may enter a description if you like.
+
+![img_6.gif](img/img_6.gif)
+

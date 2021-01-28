@@ -2,9 +2,9 @@
 
 [TOC]
 
-When learning about push and toggle buttons on MakerCloud, you learned how to control the lights on your micro:bit with buttons on MakerCloud.
 
-This page has some instructions on building a smart light using the Powerbrick RGB light.
+
+This page has some instructions on building a smart light using the Powerbrick RGB light and controlling the smart light with widgets on MakerCloud.
 
 ### Construction
 ##### You will need:
@@ -33,7 +33,11 @@ Using your creativity, build a structure that holds these parts together. Here i
 ![img_6.jpg](img/img_6.jpg)
 
 ### Programming
-You can create push and/or toggle buttons like you have previously learned. For instructions on push and toggle buttons, click [here.]()
+Create a project, topic and data type in MakerCloud. For instructions on creating a project, click [here.](ch1_project/project.md) For instructions on creating a topic and data type, click [here.](ch3_topic/topic.md)
+
+Make a two push buttons or one toggle button that send messages of 1 and 0 to a data type of your selection.
+For instructions on making push and toggle buttons on MakerCloud, click [here.](ch6.1_widgets/microbit_light)
+
 
 On MakeCode, create a program that turns on the RGB light when a message of 1 is received and turns it off when a message of 0 is received.
 
