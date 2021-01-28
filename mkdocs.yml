@@ -7,7 +7,7 @@ site_description: Learn to use MakerCloud and easily practice IoT and A.I.
 nav:
   - MakerCloud: https://makercloud.io/
   - Home Page: index.md
-  - Start Using: ch0_registration/register.md
+  - Getting Started: ch0_registration/register.md
   - Project: ch1_project/project.md
   - IoT:
       - MQTT: ch2_MQTT/mqtt.md
@@ -30,22 +30,22 @@ nav:
       - Python: ch6_subscribe/python/subscribe_python.md
       - M5Stack: ch6_subscribe/m5stack/subscribe_m5stack.md
   - MakerCloud - Widgets:
-      - Push and Toggle Buttons: ch6.1_widgets/smart_light.md
+      - Push and Toggle Buttons: ch6.1_widgets/microbit_light.md
   - MakerCloud - Charts:
-      - Chart Detail Features: ch7_charts/7.1/smart_lamppost7.1.md
-      - Customizable Chart Features: ch7_charts/7.2/smart_lamppost7.2.md
+      - Chart Detail Features: ch7_charts/lamppost/smart_lamppost7.1.md
+      - Customizable Chart Features: ch7_charts/lamppost2/smart_lamppost7.2.md
   - MQTT - Event Trigger:
-      - Event Trigger Applet: ch9_event_trigger/9.1/smartrack_ET.md
-      - Event Trigger with IFTTT: ch9_event_trigger/9.2_smartrack_IFTTT.md
+      - Event Trigger Applet: ch9_event_trigger/event_trigger/smartrack_ET.md
+      - Event Trigger with IFTTT: ch9_event_trigger/ifttt/smartrack_IFTTT.md
   - MakerCloud - Location:
       - Location Features: ch10_location/makercloud_location.md
   - MakerCloud - AI:
       - Face Detection: ch11_AI/11.1/face_detection.md
       - Object Detection: ch11_AI/11.2/object_detection.md
   - Smart City:
-      - Smart Light:
-      - Smart Lamppost:
-      - Smart Hanger:
+      - Smart Light: ch12_smart_city/light/smart_light.md
+      - Smart Lamppost: ch12_smart_city/lamppost/smart_lamppost.md
+      - Smart Hanger: ch12_smart_city/hanger/smart_hanger.md
 theme: readthedocs
 
 copyright: ©Copyright SCALE Innotech Limited

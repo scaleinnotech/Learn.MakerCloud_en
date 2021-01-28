@@ -46,11 +46,11 @@ If you registered with a Google Account, just log in with Google on the homepage
 
 Non-Google users can access the "Change Password" button by clicking on the avatar in the upper right corner
 
-![img_11.png](img/img_11.png){:width="60%"}
+![img_11.png](img/img_11.png)
 
 If you do not have an existing password, leave the "old password" blank for the first time
 
-![img_12.png](img/img_12.png){:width="60%"}
+![img_12.png](img/img_12.png){:width="70%"}
 
 ## Logging in to MakerCloud
 If you registered with a Google account, just log in with Google on the homepage, no password is required
