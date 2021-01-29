@@ -21,16 +21,16 @@ This page has some instructions on building a smart light using the Powerbrick R
 - the kittenwifi and battery pack connect the same way as normal
 
 
-![img_1.jpg](img/img_1.jpg)
+![img_1.jpg](img/img_1.JPG)
 
 Using your creativity, build a structure that holds these parts together. Here is an example of a structure.
 - Notice that there is space inside the structure for the wires to be contained.
 
-![img_2.jpg](img/img_2.jpg)
-![img_3.jpg](img/img_3.jpg)
-![img_4.jpg](img/img_4.jpg)
-![img_5.jpg](img/img_5.jpg)
-![img_6.jpg](img/img_6.jpg)
+![img_2.jpg](img/img_2.JPG)
+![img_3.jpg](img/img_3.JPG)
+![img_4.jpg](img/img_4.JPG)
+![img_5.jpg](img/img_5.JPG)
+![img_6.jpg](img/img_6.JPG)
 
 ### Programming
 Create a project, topic and data type in MakerCloud. For instructions on creating a project, click [here.](ch1_project/project.md) For instructions on creating a topic and data type, click [here.](ch3_topic/topic.md)
