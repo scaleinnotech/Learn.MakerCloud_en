@@ -53,7 +53,7 @@ Using these sensors, build a structure based on your own ingenuity and add and c
 
 ### Connecting with Smart Hanger
 
-First make sure that you have constructed the smart hanger. For instructions, click [here](ch12_smart_city/hanger/smart_hanger.md)
+First make sure that you have constructed the smart hanger. For instructions, click [here. ](ch12_smart_city/hanger/smart_hanger.md)
 
 Then, program the connection between the smart lamppost and smart hanger using event trigger.
 
