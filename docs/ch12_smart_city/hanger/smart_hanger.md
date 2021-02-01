@@ -11,6 +11,7 @@ Here are instructions on how to construct the smart hanger
 ### Parts Needed
 
 Here are all of the parts you need for the smart Hanger:
+
 - the Powerbrick parts are:
 - micro:bit and armourbit
 - kittenwifi
@@ -23,7 +24,7 @@ Here are all of the parts you need for the smart Hanger:
 
 Here is how the connections will work:
 
-![img_2.jpg](img/img_2.jpg)
+![img_2.png](img/img_2.png)
 
 ### Assembly
 
