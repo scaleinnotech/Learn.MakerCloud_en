@@ -93,7 +93,7 @@ When you press "A" on your micro:bit, it will post the text message "hello" to a
 **Preparation on MakerCloud:**
 
 1. Create a project
-2. Create a theme
+2. Create a topic
 
 **Programming on MakeCode:**
 

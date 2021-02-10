@@ -48,7 +48,7 @@ Here is an example of what a completed smart hanger can look like:
 
 ### Connecting with Smart Lamppost
 
-First make sure that you have constructed the smart lamppost. For instructions, click [here](ch12_smart_city/lamppost/smart_lamppost.md)
+First make sure that you have constructed the smart lamppost. For instructions, click [here](../lamppost/smart_lamppost.md)
 
 Then, program the connection between the smart lamppost and smart hanger using event trigger.
 

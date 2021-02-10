@@ -43,7 +43,7 @@ Make a button that publishes the text in the input box on MakerCloud when clicke
 **Preparation on MakerCloud:**
 
 1. Create a project
-2. Create a theme
+2. Create a topic
 
 **Programming on AI2:**
 
@@ -97,7 +97,7 @@ On the project homepage of MakerCloud, you should see the text messages publishe
 **Preparation on MakerCloud**
 
 1. Create a project
-2. Create a theme
+2. Create a topic
 
 **Then you can program on AI2:**
 

@@ -39,6 +39,8 @@ nav:
   - MakerCloud - Charts:
       - Chart Detail Features: ch7_charts/lamppost/smart_lamppost7.1.md
       - Customizable Chart Features: ch7_charts/lamppost2/smart_lamppost7.2.md
+  - MakerCloud - Dashboad:
+      - Dashboad: ch8_dashboard/smart_lamppost7.3.md
   - MQTT - Event Trigger:
       - Event Trigger Applet: ch9_event_trigger/event_trigger/smartrack_ET.md
       - Event Trigger with IFTTT: ch9_event_trigger/ifttt/smartrack_IFTTT.md
@@ -46,7 +48,7 @@ nav:
       - Location Features: ch10_location/makercloud_location.md
   - MakerCloud - AI:
       - Face Detection: ch11_AI/face/face_detection.md
-      - Object Detection: ch11_AI/pbject/object_detection.md
+      - Object Detection: ch11_AI/object/object_detection.md
   - Smart City:
       - Smart Light: ch12_smart_city/light/smart_light.md
       - Smart Lamppost: ch12_smart_city/lamppost/smart_lamppost.md

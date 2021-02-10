@@ -81,7 +81,7 @@ You can use the subscription blocks that correspond to the data type that you ar
 7. Download the program to micro:bit
 
 When finished, return to the Internet of Things homepage of your project on MakerCloud.
-Press the "Details" button in the theme to enter the theme homepage.
+Press the "Details" button in the topic to enter the topic homepage.
 In the "Send Message to Topic" box, enter "hello" and click "Send".
 
 ![img_publishhello.gif](img/img_publishhello.gif)

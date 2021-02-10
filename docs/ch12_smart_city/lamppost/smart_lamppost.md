@@ -53,11 +53,11 @@ Using these sensors, build a structure based on your own ingenuity and add and c
 
 ### Connecting with Smart Hanger
 
-First make sure that you have constructed the smart hanger. For instructions, click [here. ](ch12_smart_city/hanger/smart_hanger.md)
+First make sure that you have constructed the smart hanger. For instructions, click [here. ](../hanger/smart_hanger.md)
 
 Then, program the connection between the smart lamppost and smart hanger using event trigger.
 
-Create a project, topic and data type in MakerCloud. For instructions on creating a project, click [here.](ch1_project/project.md) For instructions on creating a topic and data type, click [here.](ch3_topic/topic.md)
+Create a project, topic and data type in MakerCloud. For instructions on creating a project, click [here.](../../ch1_project/project.md) For instructions on creating a topic and data type, click [here.](../../ch3_Topic/topic.md)
 
 ###### Programming for Smart Lamppost:
 Program the lamppost to constantly publish rain data to MakerCloud

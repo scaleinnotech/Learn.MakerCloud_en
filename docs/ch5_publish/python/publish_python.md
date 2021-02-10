@@ -87,7 +87,7 @@ topic ='QQP4LRB0'
 while 1:
      # Read input crossword
      message = input('Message:')
-     # Post text message to MakerCloud theme
+     # Post text message to MakerCloud topic
      MakerCloudMQTT.publish_message(topic, message)
 ```
 
@@ -131,7 +131,7 @@ topic ='QQP4LRB0'
 while 1:
      # Generate random numbers (1-10)
      randomInt = random.randint(1, 10)
-     # Publish key-value pairs (random numbers) to the Makercloud theme
+     # Publish key-value pairs (random numbers) to the Makercloud topic
      MakerCloudMQTT.publish_key_value(topic,'num', randomInt)
      print('Published: num =',randomInt)
      # Pause for 1 second
