@@ -87,7 +87,7 @@ topic ='QQP4LRB0'
 while 1:
      # Read input crossword
      message = input('Message:')
-     # Post text message to MakerCloud topic
+     # publish text message to MakerCloud topic
      MakerCloudMQTT.publish_message(topic, message)
 ```
 

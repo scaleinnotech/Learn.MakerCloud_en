@@ -1,4 +1,4 @@
-# Using KOI to subscribe to topics
+# Using KOI to publish message
 Before publishing messages to MakerCloud, users must first learn how to connect KOI to MakerCloud via MQTT:
 [Use KOI to connect to MakerCloud](../../ch4_connect/KOI/connect_KOI.md)
 

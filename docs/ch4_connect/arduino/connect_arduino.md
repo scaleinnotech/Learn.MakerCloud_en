@@ -27,7 +27,7 @@ After downloading, open the installer and follow the instructions to complete th
 
    ![img_1.png](img/img_1.png)
 
-## Connecting to Maker Cloud
+## Connecting to topic
 There are many different ways to connect to Wi-Fi with Arduino.
 The following teaching will demonstrate using Arduino with the ESP-01 (ESP8266 module).
 

@@ -20,7 +20,7 @@ Users can use the MakerCloud programming blocks from Custom to publish messages 
 - Learn how to use M5Stack to publish key-value pairs to a topic on MakerCloud
 - Create a line graph on MakerCloud that displays and records key-value messages
 
-#### Exercise: Post random numbers
+#### Exercise: publish random numbers
 - Make a button that publishes a random key-value message when clicked.
 - Create a line graph on MakerCloud to display and record key-value messages
 

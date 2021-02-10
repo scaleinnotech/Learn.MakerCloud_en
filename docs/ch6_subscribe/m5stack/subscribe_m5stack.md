@@ -61,5 +61,5 @@ In this exercise, the user will receive random numbers from the program made in 
    
 ![img_5.png](img/img_5.png)
 
-When finished, download the programming to M5Stack. When Button B is pressed, M5Stack will post a random number to MakerCloud.
+When finished, download the programming to M5Stack. When Button B is pressed, M5Stack will publish a random number to MakerCloud.
 At the same time, M5Stack should receive random numbers from MakerCloud and display them on the screen.

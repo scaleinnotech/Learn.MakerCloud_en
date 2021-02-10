@@ -1,4 +1,4 @@
-# Use BBC micro:bit to post messages
+# Use BBC micro:bit to publish messages
 Before programming and publishing messages to MakerCloud, users must first connect micro:bit to MakerCloud via MQTT. For instructions, refer to the following link:
 
 [Using BBC micro:bit to connect to MakerCloud](../../ch4_connect/microbit/connect_microbit.md)
@@ -8,7 +8,7 @@ Before programming and publishing messages to MakerCloud, users must first conne
 ## KittenWiFi
 Even if you use different micro:bit expansion boards, they can use the same program blocks to program and publish messages as long as they are successfully connected to MakerCloud. The following uses Armour:bit as a demonstration.
 **Note that each program must initially connect to Wi-Fi and MakerCloud MQTT. **
-### Post message blocks
+### publish message blocks
 In the MakerCloud extension, there are different types of publishing program blocks, depending on the data type that is being sent.
 
 **Publishing a text message**
@@ -40,7 +40,7 @@ Publish a latitude and longitude message to a topic via KittenWiFi on MakerCloud
 - Learn how to publish text messages to a topic on MakerCloud via KittenWiFi
 #### Exercise: Say hello to MakerCloud
 ##### Goal:
-When you press "A" on your micro:bit, it will post the text message "hello" to a topic on MakerCloud.
+When you press "A" on your micro:bit, it will publish the text message "hello" to a topic on MakerCloud.
 
 ![img_9.png](img/img_9.png){:width="70%"}
 
@@ -83,7 +83,7 @@ When you press "A" on your micro:bit, it will post the text message "hello" to a
 - Learn how to publish key-value pairs to a MakerCloud topic via KittenWiFi
 - Learn to create a line graph on MakerCloud to display and record key-value pair messages
 
-#### Exercise: Post random numbers
+#### Exercise: publish random numbers
 ##### Goals
 - When you press A on your micro:bit, the micro:bit will publish a key-value pair message (a random number value) on MakerCloud
 - Create a line graph on MakerCloud to display and record key-value pairs
