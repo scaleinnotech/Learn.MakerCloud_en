@@ -30,3 +30,5 @@ Maker Cloud is an IoT integration platform independently developed by SCALE Inno
 - [Subscribing to topics using App Inventor 2](ch6_subscribe/ai2/subscribe_ai2.md)
 - [Subscribing to topics using Python](ch6_subscribe/python/subscribe_python.md)
 - [Subscribing to topics using M5Stack](ch6_subscribe/ai2/subscribe_ai2.md)
+
+**MakerCloud - Widgets**
