@@ -57,7 +57,7 @@ You can use the subscription blocks that correspond to the data type that you ar
 
 1. Create a project
 2. Add the MakerCloud KittenWiFi extension:
-   [https://github.com/maxwong-scale/pxt-makercloud-V2]()
+   [https://github.com/scaleinnotech/pxt-makercloud-V2]()
 3. On start:
    Update Armourbit port, connect WiFi and MakerCloud MQTT
 4. Add the "subscribe to topic" block, then copy and paste the name of the topic you are subscribing to

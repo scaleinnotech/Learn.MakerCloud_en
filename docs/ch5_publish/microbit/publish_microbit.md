@@ -53,7 +53,7 @@ When you press "A" on your micro:bit, it will publish the text message "hello" t
 
 1. Create a project
 2. Add the MakerCloud KittenWiFi extension:
-   [https://github.com/maxwong-scale/pxt-makercloud-V2]()
+   [https://github.com/scaleinnotech/pxt-makercloud-V2]()
 3. On start:
    Update armour:bit port, connect WiFi and MakerCloud MQTT
 4. When button "A" is pressed:
@@ -99,7 +99,7 @@ When you press "A" on your micro:bit, it will publish the text message "hello" t
 
 1. Create a project
 2. Add the MakerCloud KittenWiFi extension:
-   [https://github.com/maxwong-scale/pxt-makercloud-V2]()
+   [https://github.com/scaleinnotech/pxt-makercloud-V2]()
 3. On start:
    Update armourbit port, connect WiFi and MakerCloud MQTT
 4. When button "A" is pressed:
